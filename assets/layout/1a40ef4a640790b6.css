@@ -1,0 +1,15 @@
+/* =========================================================
+INDEX SCSS
+========================================================= */
+@media screen and (max-width: 959px) {
+  .ttl-module-1 {
+    background: url("/sugawaragumi-preview/assets/layout/8ea03146bd61faaf7693.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .ttl-module-1 {
+    background: url("/sugawaragumi-preview/assets/layout/1a3e6b4f3be1c53c7a32.jpg") center/cover no-repeat;
+  }
+}
+/*# sourceMappingURL=kenko.css.map */

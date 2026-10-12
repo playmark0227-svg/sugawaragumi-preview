@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/* =========================================================
+Number SCSS
+========================================================= */
+@media screen and (max-width: 959px) {
+  .ttl-module-1 {
+    background: url("/sugawaragumi-preview/assets/layout/0142e545b6e45359b1ac.jpg") center/cover no-repeat;
+  }
+}
+@media screen and (min-width: 960px) {
+  .ttl-module-1 {
+    background: url("/sugawaragumi-preview/assets/layout/4746f77bea04fcf6da6d.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .itw-name__jp {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-name__en {
+    position: relative;
+    top: -4px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .itw-job {
+    margin-top: 2.5vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-job {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .itw-img {
+    margin-top: 2.5vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-img {
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.itw-img__thumb {
+  display: block;
+  width: auto;
+  max-height: 800px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .itw-img__thumb.is-kohira {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.itw-img__cap {
+  display: block;
+  font-style: italic;
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 959px) {
+  .itw-img__cap {
+    padding: 3vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-img__cap {
+    padding: 15px 30px;
+  }
+}
+.itw-img__caplink {
+  color: #d84b3d;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 959px) {
+  .itw-box {
+    margin-top: 10vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-box {
+    margin-top: 60px;
+  }
+}
+.itw-box__ttl {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #d84b3d;
+}
+@media screen and (max-width: 959px) {
+  .itw-box__ttl {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-box__ttl {
+    font-size: 2.4rem;
+  }
+}
+.itw-box__ttl:before {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-right: 8px;
+  background-color: #d84b3d;
+}
+@media screen and (max-width: 959px) {
+  .itw-box__ttl:before {
+    width: 4vw;
+    margin-top: calc(3.6vw - 2px);
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-box__ttl:before {
+    width: 20px;
+    margin-top: 17.2px;
+  }
+}
+.itw-box__dctxt {
+  display: block;
+}
+@media screen and (max-width: 959px) {
+  .itw-box__dctxt {
+    width: calc(95.5vw - 8px);
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-box__dctxt {
+    width: calc(100% - 28px);
+  }
+}
+.itw-box__txt {
+  line-height: 1.8;
+}
+@media screen and (min-width: 960px) {
+  .itw-box__txt {
+    margin-top: 10px;
+    padding-right: 20%;
+  }
+}
+.itw-box__img {
+  display: block;
+}
+@media screen and (max-width: 959px) {
+  .itw-box__img {
+    width: 100%;
+    margin-top: 3.5vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-box__img {
+    width: 75%;
+    margin-top: 15px;
+  }
+}
+.itw-box__note {
+  display: block;
+  color: #a7a7a7;
+}
+@media screen and (max-width: 959px) {
+  .itw-box__note {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .itw-box__note {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .time-table {
+    margin-top: 8vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .time-table {
+    margin-top: 40px;
+  }
+}
+.time-table__cap {
+  text-align: left;
+  color: #fff;
+  background-color: #d84b3d;
+}
+@media screen and (max-width: 959px) {
+  .time-table__cap {
+    padding: 2.5vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .time-table__cap {
+    padding: 10px 20px;
+    font-size: 2.2rem;
+  }
+}
+.time-table__row:not(:first-of-type) .time-table__time {
+  border-top: 1px solid #fff;
+}
+.time-table__row:not(:first-of-type) .time-table__txt {
+  border-top: 1px solid #f0f0f0;
+}
+@media screen and (max-width: 959px) {
+  .time-table__time, .time-table__txt {
+    padding: 2.5vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .time-table__time, .time-table__txt {
+    padding: 10px 20px;
+  }
+}
+.time-table__time {
+  text-align: left;
+  font-weight: normal;
+  background-color: #f0f0f0;
+}
+@media screen and (min-width: 960px) {
+  .time-table__time {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .time-table__txt {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .interview-list {
+    padding: 10.2vw 6.25vw 7vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list {
+    padding-top: 3.2vw;
+  }
+}
+.interview-list__intro {
+  max-width: 900px;
+}
+@media screen and (max-width: 959px) {
+  .interview-list__intro {
+    margin: 0 auto 11vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__intro {
+    margin: 0 auto 3vw;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__intro .text {
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .interview-list__intro .supplement {
+    margin: 10px 0 0;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__intro .supplement {
+    margin: 0.6vw 0 0;
+    font-size: 1.3rem;
+  }
+}
+.interview-list__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .interview-list__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.interview-list__box {
+  position: relative;
+  background: #f2f2f3;
+}
+@media screen and (max-width: 959px) {
+  .interview-list__box {
+    margin-bottom: 6.6vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__box {
+    width: calc((99.9999% - 100px) / 3);
+    max-width: 270px;
+    margin-bottom: 2.6vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__box:not(:nth-child(3n)) {
+    margin-right: 35px;
+  }
+}
+.interview-list__musk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  background: rgba(0, 81, 170, 0.7);
+}
+@media screen and (min-width: 960px) {
+  .interview-list__musk:hover {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__musk:hover .interview-list__arrow {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__musk:hover:after {
+    content: "";
+  }
+}
+.interview-list__arrow {
+  display: block;
+  position: relative;
+  margin: auto;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+}
+.interview-list__arrow svg {
+  margin-top: 10px;
+}
+.interview-list__pic {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 959px) {
+  .interview-list__pic {
+    width: 100%;
+    height: 65vw;
+    margin: 0 0 20px;
+    background-position: center top;
+    background-size: auto 100%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__pic {
+    max-height: 380px;
+    height: 30vw;
+    margin: 0 0 15px;
+    background-position: center top;
+    background-size: auto 100%;
+  }
+}
+.interview-list__position {
+  background: #d84b3d;
+  color: #ffffff;
+  text-align: center;
+}
+@media screen and (max-width: 959px) {
+  .interview-list__position {
+    width: 36vw;
+    height: 7vw;
+    margin: 0 6vw 3.8vw 6vw;
+    font-size: 0.9rem;
+    line-height: 7vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__position {
+    width: 159px;
+    height: 27px;
+    margin: 0 20px 10px;
+    font-size: 1.3rem;
+    line-height: 27px;
+  }
+}
+.interview-list__name {
+  font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", YuMincho, "游明朝", serif;
+}
+@media screen and (max-width: 959px) {
+  .interview-list__name {
+    padding: 0 6vw 2vw 6vw;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__name {
+    margin: 0 20px 5px;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 959px) {
+  .interview-list__name .en {
+    margin-left: 13px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__name .en {
+    margin-left: 10px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1080px) and (min-width: 960px) {
+  .interview-list__name .en {
+    display: block;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 959px) {
+  .interview-list__detail {
+    padding: 0 6vw 5vw 6vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .interview-list__detail {
+    padding: 0 20px 20px;
+  }
+}
+
+_:-ms-input-placeholder .interview-list__arrow, :root .interview-list__arrow {
+  height: 60px;
+}
+_:-ms-input-placeholder .interview-list__box:not(:nth-child(3n)), :root .interview-list__box:not(:nth-child(3n)) {
+  margin-right: 35px;
+}
+_:-ms-input-placeholder .interview-list__position, :root .interview-list__position {
+  margin: 0 1.2vw 0.8vw;
+  line-height: 31px;
+}
