@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="499.98" height="500" viewBox="0 0 499.98 500">
+  <g id="グループ_37" data-name="グループ 37" transform="translate(0.001 0)">
+    <g id="Ring_Chart7" data-name="Ring Chart7" transform="translate(-0.001 0)">
+      <path id="パス_10" data-name="パス 10" d="M0-100A249.989,249.989,0,0,1,202.245,3.049,249.989,249.989,0,0,1,237.754,227.24L0,149.989Z" transform="translate(249.989 100)" fill="#135597"/>
+      <path id="パス_11" data-name="パス 11" d="M387.742,77.251a249.989,249.989,0,0,1-276.86,169.66A249.989,249.989,0,0,1-100,0H149.989Z" transform="translate(100 249.989)" fill="#176abd"/>
+      <path id="パス_12" data-name="パス 12" d="M-100,149.989C-100,11.924,11.924-100,149.989-100V149.989Z" transform="translate(100 100)" fill="#1e80e1"/>
+    </g>
+    <g id="グループ_18" data-name="グループ 18" transform="translate(-1)">
+      <text id="技能者" transform="translate(291 130)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="0">技能者</tspan></text>
+      <text id="_" data-name="%" transform="translate(414 183)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="38">%</tspan></text>
+      <text id="_30" data-name="30" transform="translate(291 145)" fill="#fff" font-size="91" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="80">30</tspan></text>
+    </g>
+    <g id="グループ_19" data-name="グループ 19" transform="translate(-134 203)">
+      <text id="技術職" transform="translate(291 130)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="0">技術職</tspan></text>
+      <text id="_2" data-name="%" transform="translate(414 183)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="38">%</tspan></text>
+      <text id="_45" data-name="45" transform="translate(291 145)" fill="#fff" font-size="91" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="80">45</tspan></text>
+    </g>
+    <g id="グループ_20" data-name="グループ 20" transform="translate(-214)">
+      <text id="事務職" transform="translate(291 130)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="0">事務職</tspan></text>
+      <text id="_3" data-name="%" transform="translate(414 183)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="38">%</tspan></text>
+      <text id="_25" data-name="25" transform="translate(291 145)" fill="#fff" font-size="91" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="80">25</tspan></text>
+    </g>
+  </g>
+</svg>

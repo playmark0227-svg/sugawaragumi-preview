@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500.025" height="500" viewBox="0 0 500.025 500">
+  <g id="グループ_36" data-name="グループ 36" transform="translate(0.005)">
+    <g id="Ring_Chart8" data-name="Ring Chart8" transform="translate(-0.005)">
+      <path id="パス_13" data-name="パス 13" d="M150.007-100A250,250,0,1,1-95.564,103.154L150.007,150Z" transform="translate(100.005 100)" fill="#135597"/>
+      <path id="パス_14" data-name="パス 14" d="M-98.229,103.154A250,250,0,0,1,147.342-100V150Z" transform="translate(102.67 100)" fill="#176abd"/>
+      <path id="パス_15" data-name="パス 15" d="M0-100v0Z" transform="translate(250.012 100)" fill="#b2df8a"/>
+    </g>
+    <g id="グループ_21" data-name="グループ 21" transform="translate(-11 165)">
+      <text id="新卒" transform="translate(291 130)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="0">新卒</tspan></text>
+      <text id="_" data-name="%" transform="translate(414 183)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="38">%</tspan></text>
+      <text id="_78" data-name="78" transform="translate(291 145)" fill="#fff" font-size="91" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="80">78</tspan></text>
+    </g>
+    <g id="グループ_22" data-name="グループ 22" transform="translate(-212 -20)">
+      <text id="中途" transform="translate(291 130)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="0">中途</tspan></text>
+      <text id="_2" data-name="%" transform="translate(414 183)" fill="#fff" font-size="43" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="38">%</tspan></text>
+      <text id="_22" data-name="22" transform="translate(291 145)" fill="#fff" font-size="91" font-family="HiraMinProN-W6, Hiragino Mincho ProN"><tspan x="0" y="80">22</tspan></text>
+    </g>
+  </g>
+</svg>

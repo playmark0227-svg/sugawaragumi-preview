@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="105" viewBox="0 0 105 105">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_9" data-name="長方形 9" width="105" height="105" transform="translate(1154 1196)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_4" data-name="マスクグループ 4" transform="translate(-1154 -1196)" clip-path="url(#clip-path)">
+    <image id="QRコード" width="131" height="131" transform="translate(1141 1183)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6AQAAAACgl2eQAAABr0lEQVR42u2ZXWrEMAyEBT5AjuSr+0g+gEHVaJRtkoY+lD5kICG7aO2vD4P165r//gx7gRd4gb8Bw+LZhs/eZhge9sKSaQHxWZu32WOxwR7xk+tCQIhaW30HYGlAuB4QZwSl4sCggfOaXREol3PnVtj3PvlsgOG/ju9dfng2UEk3xQbcl9ldrhYAImoiFeP19L0UKwVE4mI1idjHMfmM2EFO1gJiZVk3xs5eXBokKwGZuKwyGJRiF8cnBcDlEC9R3PHmn/RjoyUBtAyWUOosJQlfA+fxQAqsysjiYlsp1QEYJoj3cLOV63C8b5fTAFauhzS07tZ956WAj8thy6zGkMhsUgDnpk69eLKyHFsUBYB2Kq2DQ991ydWPB5wpizNUlpJx9UkBYGQGQMiAYbs1zQWBxV5371WcsaMF5CSbUT9KIG0pAMG++ed6JOs7Wi8poJwre13j9IGd84TyeIAjLQdza+zk9+QsBHgd0/Fi4dSJSQC8sGqzxpCqiQef1ALQumeJbOfwFwJ8HwBT4Pgp8+HAfu2GM+I9j5XvKQEMf8pkfeQNgxTw/jfqBV7gv4EvRonjIKIAtIoAAAAASUVORK5CYII="/>
+  </g>
+</svg>
