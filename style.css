@@ -63,3 +63,40 @@
 @media(max-width:359px){.hero-copy{padding-left:22px;padding-right:22px;padding-bottom:28px}.hero h1{font-size:clamp(29px,9.6vw,35px)}.hero-motto{font-size:11.5px;letter-spacing:.01em}.hero-copy>.kicker{font-size:7px}.hero-small{font-size:11px}.hero-stamp{left:22px}.hero-rail{padding-left:22px;padding-right:22px;font-size:10px}.hero-copy .line-link{margin-top:17px}.hero-stamp b{font-size:32px}}
 @media(max-width:640px) and (max-height:700px){.hero{min-height:610px}.hero-copy{padding-bottom:28px}.hero-copy>.kicker{margin-bottom:12px}.hero-motto{margin-top:13px}.hero-small{margin-top:12px}.hero-copy .line-link{margin-top:17px}}
 @media(min-width:641px){.hero-media:before{content:"";position:absolute;inset:0 0 65%;background:linear-gradient(#0d1c2559,transparent);z-index:1;pointer-events:none}.hero-stamp{text-shadow:0 1px 7px #0008}}
+
+/* Both company phrases sit directly over the playing drone footage. */
+.hero{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:1fr;min-height:clamp(580px,calc(100svh - 94px),780px);background:var(--ink);isolation:isolate}
+.hero-copy,.hero-media{grid-area:1/1;min-width:0}
+.hero-media{height:auto;z-index:0;background:var(--ink)}
+.hero-media video{inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 50%;-webkit-mask-image:none;mask-image:none}
+.hero-media:before{display:none}
+.hero-media:after{inset:0;background:linear-gradient(180deg,rgba(12,25,33,.25),rgba(12,25,33,.43) 48%,rgba(12,25,33,.51));z-index:1}
+.hero-copy{align-self:stretch;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;background:transparent;padding:100px var(--base) 85px;text-align:center;pointer-events:none}
+.hero-copy>*{pointer-events:auto}
+.hero-copy>.kicker{color:#fff;font-size:10px;letter-spacing:.12em;margin-bottom:25px;line-height:1.8}
+.hero h1{font-size:clamp(30px,4.6vw,74px);font-weight:800;line-height:1.5;letter-spacing:.01em;white-space:nowrap;color:white;text-shadow:0 2px 22px #0005}
+.hero h1 br{display:none}.hero h1 span{color:white}
+.hero-motto{font-size:clamp(15px,1.8vw,25px);letter-spacing:.08em;font-weight:600;line-height:1.9;color:#fff;margin-top:20px;white-space:nowrap;text-shadow:0 1px 12px #0005}
+.hero-small{color:#e5e9ea;font-size:13px;line-height:2;margin-top:26px;max-width:none;text-shadow:0 1px 12px #0007}
+.hero-copy .line-link{align-self:center;width:235px;min-width:0;max-width:100%;min-height:49px;margin-top:28px;padding:12px 0;border-color:#ffffffa0;font-size:12px;text-align:left;color:white}
+.hero-copy .line-link span{color:white;font-size:27px}
+.hero-stamp{top:27px;left:var(--base);right:auto;z-index:3;gap:13px;align-items:center;text-shadow:0 1px 9px #0009}
+.hero-stamp b{font-size:41px;line-height:1}.hero-stamp small{font-size:8px;line-height:1.7;padding:0}
+.hero-media-bottom{top:25px;right:var(--base);left:auto;bottom:auto;z-index:3}
+.hero-media-bottom>span{display:none}
+.video-control{min-height:44px;padding:10px 13px;border:1px solid #ffffff8c;background:#10243130;color:white;font-size:9px;gap:9px}.video-control span{font-size:15px}
+@media(max-width:950px) and (min-width:641px){.hero{min-height:clamp(550px,calc(100svh - 82px),730px)}.hero h1{font-size:4.55vw}.hero-copy>.kicker{font-size:9px}.hero-motto{font-size:18px}}
+@media(max-width:640px){
+ .hero{min-height:clamp(520px,calc(100svh - 76px),720px)}
+ .hero-media video{height:100%;object-position:76% 50%}
+ .hero-media:after{background:linear-gradient(180deg,rgba(12,25,33,.22),rgba(12,25,33,.48) 43%,rgba(12,25,33,.58))}
+ .hero-copy{padding:100px 24px 75px;align-self:stretch;justify-content:center}
+ .hero-copy>.kicker{font-size:8px;letter-spacing:.07em;margin-bottom:22px}
+ .hero h1{font-size:clamp(31px,9.5vw,44px);line-height:1.55;letter-spacing:.015em}.hero h1 br{display:initial}
+ .hero-motto{font-size:clamp(12px,3.65vw,16px);letter-spacing:.025em;margin-top:18px}
+ .hero-small{font-size:12px;line-height:2;margin-top:24px;color:#eef1f2}
+ .hero-copy .line-link{width:240px;margin-top:25px;font-size:12px;min-height:48px}
+ .hero-stamp{top:24px;left:24px;gap:10px}.hero-stamp b{font-size:34px}.hero-stamp small{font-size:7px}
+ .hero-media-bottom{top:22px;right:24px}.video-control{font-size:8px;padding:9px 11px}
+}
+@media(max-width:359px){.hero-copy{padding-left:22px;padding-right:22px}.hero h1{font-size:29px;letter-spacing:0}.hero-motto{font-size:11.5px;letter-spacing:0}.hero-copy>.kicker{font-size:7px}.hero-small{font-size:11px}.hero-stamp{left:22px}.hero-media-bottom{right:22px}}
