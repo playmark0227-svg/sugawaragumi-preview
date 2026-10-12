@@ -1,4 +1,6 @@
 (() => {
+  const outline=document.querySelector('.page-outline');
+  if(outline){const compact=matchMedia('(max-width: 950px)');const syncOutline=()=>{outline.open=!compact.matches;};syncOutline();compact.addEventListener('change',syncOutline);outline.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{if(compact.matches)outline.open=false;}));}
   const base = document.documentElement.dataset.base || '/';
   const menu = document.querySelector('.site-directory');
   const toggle = document.querySelector('.index-toggle');
