@@ -22,3 +22,44 @@
 @media(max-width:640px){.document-company .company-profile td,.document-company .related-companies td,.document-company .qualifications-grid th{font-size:12px}.document-company .source-name-list__job{font-size:9px}.document-company .source-col-list li,.document-company .client-list li{font-size:11px}.document-company .source-list-module-4__item__txt{font-size:12px}.document-company .related-companies th[colspan]{font-size:11px}.document-company .source-inner>.source-ttl-module-2{font-size:23px}}
 .document-interview .source-itw-name__jp{display:block;font-size:36px;letter-spacing:.06em;line-height:1.5}.document-interview .source-itw-name__en{display:block;font:12px/1.8 var(--mono);color:var(--muted);margin-top:11px;letter-spacing:.03em}.document-interview .source-itw-job{font-size:12px;color:var(--red);font-weight:600}.document-interview .source-itw-img{margin:0 0 34px;padding:23px 28px;background:var(--paper)}.document-interview .source-itw-img__cap{font-size:13px;line-height:2.1}
 @media(max-width:640px){.document-interview .source-itw-name__jp{font-size:29px}.document-interview .source-itw-name__en{font-size:11px;margin-top:7px}.document-interview .source-itw-img{padding:19px 22px}.document-interview .source-itw-img__cap{font-size:12px}}
+
+/* Original company slogan, with a continuous mobile drone hero. */
+.hero h1{font-size:clamp(35px,4vw,65px);letter-spacing:-.04em;line-height:1.5}
+.hero-motto{font-size:clamp(12px,1.25vw,18px);letter-spacing:.04em;font-weight:600;margin-top:23px;line-height:1.9}
+.hero-copy>.kicker{font-size:9px;letter-spacing:.06em}.hero-small{font-size:12px;line-height:2.1}
+.hero-copy .line-link{min-height:48px}
+@media(min-width:641px) and (max-width:950px){.hero h1{font-size:4.1vw}.hero-copy{padding-right:20px}.hero-motto{font-size:clamp(10px,1.55vw,14px);letter-spacing:0}.hero-copy>.kicker{font-size:7px;letter-spacing:0}.hero-small{font-size:11px}.hero{min-height:570px}}
+@media(max-width:640px){
+ .hero{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:1fr;min-height:clamp(610px,calc(100svh - 76px),760px);background:var(--ink);isolation:isolate}
+ .hero-media,.hero-copy{grid-area:1/1;min-width:0}
+ .hero-media{height:auto;z-index:0;background:var(--ink)}
+ .hero-media video{width:100%;height:54%;inset:0 0 auto;object-fit:cover;object-position:82% 45%;-webkit-mask-image:linear-gradient(#000 0%,#000 76%,transparent 100%);mask-image:linear-gradient(#000 0%,#000 76%,transparent 100%)}
+ .hero-media:after{inset:0;background:linear-gradient(180deg,rgba(12,25,33,.4) 0%,rgba(15,25,31,.04) 25%,rgba(23,28,32,.28) 38%,rgba(23,28,32,.96) 54%,#171c20 65%);z-index:0}
+ .hero-copy{z-index:1;align-self:end;justify-content:flex-end;background:transparent;padding:0 26px 33px;pointer-events:none}
+ .hero-copy>*{pointer-events:auto}
+ .hero-copy>.kicker{font-size:9px;line-height:1.8;letter-spacing:.06em;margin-bottom:15px;color:#d2dce0}
+ .hero-copy>.kicker:before{width:5px;height:5px}
+ .hero h1{font-size:clamp(32px,9.9vw,47px);font-weight:800;line-height:1.5;letter-spacing:-.035em;white-space:nowrap;text-shadow:0 1px 16px rgba(0,0,0,.15)}
+ .hero h1 span{color:white}
+ .hero-motto{font-size:clamp(12px,3.6vw,16px);letter-spacing:.035em;line-height:1.8;margin-top:17px;font-weight:600;color:white;white-space:nowrap}
+ .hero-small{font-size:12px;color:#c7d0d3;line-height:1.95;margin-top:16px;max-width:none}
+ .hero-copy .line-link{width:100%;min-width:0;max-width:none;margin-top:22px;font-size:12px;padding:12px 0 11px;border-color:#ffffff70;min-height:47px}
+ .hero-copy .line-link span{font-size:28px;color:#f1745f}
+ .hero-stamp{top:25px;left:26px;right:auto;gap:11px;align-items:center;z-index:2;text-shadow:0 1px 9px #0009}
+ .hero-stamp b{font-size:37px;line-height:1;letter-spacing:-.09em}
+ .hero-stamp small{font-size:7px;line-height:1.65;padding:0;letter-spacing:.06em;text-shadow:0 1px 8px #0007}
+ .hero-media-bottom{top:22px;right:21px;left:auto;bottom:auto;z-index:2}
+ .hero-media-bottom>span{display:none}
+ .video-control{min-height:44px;padding:9px 10px;border:1px solid #ffffff6b;background:rgba(13,28,36,.3);font-size:8px;gap:7px;letter-spacing:.08em}
+ .video-control span{font-size:14px}
+ .hero-rail{padding:16px 26px;font-size:11px;line-height:1.75}.hero-rail a{width:100%;justify-content:space-between;gap:17px}
+ .home-news{padding:22px var(--base)}.home-news>a{font-size:12px;line-height:1.8}.home-news time{font-size:10px}
+ .lead-copy p,.president-section p,.community-item p,.recruit-banner p,.movie-layout p,.access-section p{font-size:13px;line-height:2.1}
+ .fleet-info p{font-size:12px;line-height:2}.business-item p{font-size:12px;line-height:1.9}
+ .home-section .line-link{font-size:12px;min-height:46px}.fleet-tabs button{min-height:62px;font-size:11px}.fleet-tabs button span{font-size:9px}
+ .news-list h3{font-size:12px;line-height:1.9}.solid-link{min-height:50px;font-size:12px}
+ .footer-nav a{min-height:35px;padding:4px 0}.index-toggle{min-height:44px}
+}
+@media(max-width:359px){.hero-copy{padding-left:22px;padding-right:22px;padding-bottom:28px}.hero h1{font-size:clamp(29px,9.6vw,35px)}.hero-motto{font-size:11.5px;letter-spacing:.01em}.hero-copy>.kicker{font-size:7px}.hero-small{font-size:11px}.hero-stamp{left:22px}.hero-rail{padding-left:22px;padding-right:22px;font-size:10px}.hero-copy .line-link{margin-top:17px}.hero-stamp b{font-size:32px}}
+@media(max-width:640px) and (max-height:700px){.hero{min-height:610px}.hero-copy{padding-bottom:28px}.hero-copy>.kicker{margin-bottom:12px}.hero-motto{margin-top:13px}.hero-small{margin-top:12px}.hero-copy .line-link{margin-top:17px}}
+@media(min-width:641px){.hero-media:before{content:"";position:absolute;inset:0 0 65%;background:linear-gradient(#0d1c2559,transparent);z-index:1;pointer-events:none}.hero-stamp{text-shadow:0 1px 7px #0008}}
