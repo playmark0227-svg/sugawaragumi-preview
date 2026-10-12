@@ -215,3 +215,33 @@ html{scroll-behavior:smooth}body{color:var(--ink);background:#fff;font-family:va
   /* Keep the full original excerpt in the link; fit its preview to the source list. */
   .news-list__item .txt-box__content{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
 }
+/* Mobile cover: a clear two-line statement over the original drone footage. */
+@media(max-width:599px){
+  .mv{height:clamp(560px,100svh,820px)}
+  .mv:after{background:linear-gradient(180deg,rgba(9,22,30,.16) 0%,rgba(9,22,30,.03) 30%,rgba(9,22,30,.36) 52%,rgba(9,22,30,.78) 78%,rgba(9,22,30,.92) 100%)}
+  .mv__catch{left:clamp(24px,6.4vw,32px);right:clamp(24px,6.4vw,32px);bottom:146px;text-align:left}
+  .mv__catch:before{content:"";display:block;width:40px;height:3px;background:#ef7868;margin-bottom:18px}
+  .mv__catch__main{font-size:clamp(32px,10vw,44px);font-weight:800;line-height:1.38;letter-spacing:.015em;text-shadow:0 2px 14px #07141a66}
+  .mv__catch__main .slogan-line{display:block;white-space:nowrap}
+  .mv__catch__sub{font-size:clamp(13px,3.7vw,16px);font-weight:600;line-height:1.7;letter-spacing:.045em;margin-top:18px;text-shadow:0 1px 8px #07141a66}
+  .mv__catch__link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:46px;margin-top:24px;padding:12px 17px;border:1px solid #ffffff7a;background:#ffffff08;font-size:14px;font-weight:600;line-height:1.4;text-shadow:none}
+  .mv__catch__link:before{display:none}
+  .mv__catch__link:after{position:static;flex-shrink:0;width:7px;height:7px;margin:0;border-width:1px;transform:rotate(45deg)}
+  .mv__news{left:clamp(24px,6.4vw,32px);right:clamp(24px,6.4vw,32px);width:auto;bottom:24px;padding:15px 0 0;align-items:flex-start;border-top:1px solid #ffffff40;background:transparent;font-size:12px;line-height:1.8}
+  .mv__news:before{display:none}
+  .mv__news__ttl{font-size:10px;line-height:2.16;color:#f39789;letter-spacing:.14em;margin-right:18px}
+  .mv__news__txt a{display:block}
+  .mv-video-control{right:clamp(24px,6.4vw,32px);top:90px;border-color:#ffffff66;background:#0a1b2759;font-size:10px;letter-spacing:.12em}
+}
+@media(max-width:359px){
+  .mv__catch{bottom:126px}
+  .mv__catch__sub{letter-spacing:.02em}
+  .mv__catch__link{margin-top:20px}
+}
+@media(max-width:599px) and (max-height:650px){
+  .mv__catch:before{margin-bottom:14px}
+  .mv__catch__sub{margin-top:14px}
+}
+@media(max-width:599px){
+  .hero-in-view .page-top{opacity:0;visibility:hidden;pointer-events:none}
+}
