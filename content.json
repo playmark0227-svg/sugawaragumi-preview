@@ -1,0 +1,140 @@
+{
+  "verifiedAt": "2026-10-12",
+  "sourceSite": "https://www.sugawaragumi.co.jp/",
+  "company": {
+    "name": "株式会社菅原組",
+    "address": "〒040-0076 北海道函館市浅野町4番16号",
+    "tel": "0138-44-3710",
+    "telHref": "tel:0138443710",
+    "fax": "0138-62-3710",
+    "founding": "1956年1月",
+    "established": "1959年12月",
+    "capital": "6,500万円",
+    "president": "菅原 修",
+    "anniversary": "2026年 創業70周年",
+    "motto": "誠実・忍耐・努力",
+    "area": "北海道・東北",
+    "description": "函館を拠点に、北海道・東北エリアで港湾・漁港の建設や、魚礁・増殖礁などの水産関連施設の造成を行っています。",
+    "branches": [
+      {
+        "name": "松前支店",
+        "address": "〒049-1512 北海道松前郡松前町字福山276番地",
+        "tel": "0139-42-2233",
+        "fax": "0139-42-4777"
+      },
+      {
+        "name": "札幌支店",
+        "address": "〒060-0807 北海道札幌市北区北7条西2丁目6番地 37山京ビル818号",
+        "tel": "011-736-3845",
+        "fax": "011-736-3845"
+      }
+    ],
+    "url": "https://www.sugawaragumi.co.jp/about/about.html"
+  },
+  "news": [
+    {
+      "title": "社報「おかげさま Vol.84」を発行しました。",
+      "date": "2026.09.28",
+      "category": "社報",
+      "url": "https://www.sugawaragumi.co.jp/news/%e7%a4%be%e5%a0%b1%e3%80%8c%e3%81%8a%e3%81%8b%e3%81%92%e3%81%95%e3%81%be-vol-84%e3%80%8d%e3%82%92%e7%99%ba%e8%a1%8c%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/",
+      "summary": "Myじんけん宣言、菅原組ゴルフコンペ、全道一斉防災訓練などを掲載しています。"
+    },
+    {
+      "title": "【9月の健康ワンポイントアドバイス】日々の習慣から始める健康づくり",
+      "date": "2026.09.28",
+      "category": "お知らせ",
+      "url": "https://www.sugawaragumi.co.jp/news/%e3%80%909%e6%9c%88%e3%81%ae%e5%81%a5%e5%ba%b7%e3%83%af%e3%83%b3%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%82%a2%e3%83%89%e3%83%90%e3%82%a4%e3%82%b9%e3%80%91%e6%97%a5%e3%80%85%e3%81%ae%e7%bf%92%e6%85%a3/",
+      "summary": "社報「おかげさま」より、運動・食事・禁煙・睡眠の4つの視点で健康づくりを紹介します。"
+    },
+    {
+      "title": "サカナマツリ2026に出展しました！",
+      "date": "2026.09.28",
+      "category": "お知らせ",
+      "url": "https://www.sugawaragumi.co.jp/news/%e3%82%b5%e3%82%ab%e3%83%8a%e3%83%9e%e3%83%84%e3%83%aa2026%e3%81%ab%e5%87%ba%e5%b1%95%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%ef%bc%81/",
+      "summary": "函館漁港活性化共創チームの一員として、函館の海や漁業の魅力を発信しました。"
+    }
+  ],
+  "fleet": [
+    {
+      "id": "18",
+      "name": "第十八すがわら号",
+      "type": "多目的ハイブリッド起重機船",
+      "capacity": "400t吊",
+      "description": "押航型・全旋回式の多目的ハイブリッド起重機船。",
+      "url": "https://www.sugawaragumi.co.jp/equipment/senpaku/",
+      "image": "assets/ship18.jpg",
+      "brochure": "https://www.sugawaragumi.co.jp/wp-content/themes/sugawara/equipment/pdf/180115_sugawara18_A4.pdf",
+      "video": "https://youtu.be/jZalwR62zTY"
+    },
+    {
+      "id": "7",
+      "name": "第七すがわら号",
+      "type": "起重機船",
+      "capacity": "210t吊",
+      "description": "全旋回式210t吊の起重機船。",
+      "url": "https://www.sugawaragumi.co.jp/equipment/sugawara07/",
+      "image": "assets/ship7.jpg"
+    },
+    {
+      "id": "10",
+      "name": "第十すがわら号",
+      "type": "起重機船",
+      "capacity": "120t吊",
+      "description": "全旋回式120t吊の起重機船。",
+      "url": "https://www.sugawaragumi.co.jp/equipment/sugawara10/",
+      "image": "assets/ship10.jpg"
+    },
+    {
+      "id": "11",
+      "name": "第十一すがわら号",
+      "type": "スパッド式バックホウ台船",
+      "capacity": "4.0m³",
+      "description": "4.0m³のバックホウを備えるスパッド式台船。",
+      "url": "https://www.sugawaragumi.co.jp/equipment/sugawara11/",
+      "image": "assets/ship11.jpg"
+    }
+  ],
+  "links": {
+    "recruit": "https://www.sugawaragumi.co.jp/recruit/",
+    "recruitContact": "https://www.sugawaragumi.co.jp/recruit/#otoiawase",
+    "line": "https://lin.ee/23p7F5v",
+    "news": "https://www.sugawaragumi.co.jp/news/",
+    "youtube": "https://www.youtube.com/channel/UCRL9wkxiz29mjyW1AXZ7aCA",
+    "privacy": null,
+    "securityPolicy": "https://www.sugawaragumi.co.jp/about/securitypolicy.html",
+    "partners": "https://www.sugawaragumi.co.jp/trader/",
+    "invoiceNumber": "https://www.sugawaragumi.co.jp/trader/businessnumber/",
+    "about": "https://www.sugawaragumi.co.jp/about.html",
+    "company": "https://www.sugawaragumi.co.jp/about/about.html",
+    "philosophy": "https://www.sugawaragumi.co.jp/about/keiei.html",
+    "history": "https://www.sugawaragumi.co.jp/about/enkaku.html",
+    "awards": "https://www.sugawaragumi.co.jp/about/commendation.html",
+    "social": "https://www.sugawaragumi.co.jp/about/social.html",
+    "health": "https://www.sugawaragumi.co.jp/kenko/",
+    "kelp": "https://www.sugawaragumi.co.jp/konbu/",
+    "kelpConsultation": "https://forms.gle/86KytLgU9UDTwbJQ8",
+    "kelpExperience": "https://forms.gle/DaufSG1gWuwZtFSt9",
+    "kelpClass": "https://forms.gle/cjq5BiMsRqgEEkJo7",
+    "kelpOwner": "https://forms.office.com/r/Gs5fuPfCAZ",
+    "interviews": "https://www.sugawaragumi.co.jp/member/",
+    "numbers": "https://www.sugawaragumi.co.jp/number/",
+    "map": "https://goo.gl/maps/MK7BYectHST2"
+  },
+  "movies": {
+    "drone": "https://www.sugawaragumi.co.jp/wp-content/themes/sugawara/index/video/DJI_0041_1.mp4",
+    "workEmbed": "https://www.youtube.com/embed/UvJqbher7K4"
+  },
+  "kelp": {
+    "title": "昆布養殖事業",
+    "description": "創業地・松前町で、海の天然資源を守り、漁業者の雇用と収入の安定を目指して昆布養殖に取り組んでいます。",
+    "ownerProgram": "昆布ひとかぶオーナー制度",
+    "ownerProgramYear": "2026年春",
+    "url": "https://www.sugawaragumi.co.jp/konbu/"
+  },
+  "health": {
+    "certification": "健康経営優良法人2026 ブライト500",
+    "bright500Years": "4年連続",
+    "certificationYears": "5年連続",
+    "url": "https://www.sugawaragumi.co.jp/kenko/"
+  }
+}
