@@ -1,0 +1,224 @@
+/* Kelp page reading hierarchy. Content, media and original column order stay intact. */
+body[data-source-path="/konbu/"] .ttl-module-4.konbu-ttl{
+  display:block;
+  color:var(--ink);
+  font-size:clamp(25px,2.65vw,38px);
+  font-weight:800;
+  line-height:1.6;
+  letter-spacing:-.015em;
+}
+body[data-source-path="/konbu/"] .ttl-module-4.konbu-ttl:after{
+  width:48px;
+  height:3px;
+  margin-top:20px;
+  background:var(--highlight);
+}
+body[data-source-path="/konbu/"] .ttl-module-4.konbu-ttl:not(:first-child){margin-top:64px}
+body[data-source-path="/konbu/"] .txt-module-4{
+  margin-top:24px;
+  font-size:16px;
+  line-height:2.05;
+}
+body[data-source-path="/konbu/"] p.text-lead{
+  margin-top:28px;
+  color:var(--accent);
+  font-size:clamp(20px,1.8vw,24px);
+  font-weight:700;
+  line-height:1.7;
+}
+body[data-source-path="/konbu/"] h3.txt-module-4.text-lead{
+  margin-top:48px;
+  padding-left:16px;
+  border-left:3px solid var(--accent);
+  color:var(--ink)!important;
+  font-size:clamp(21px,1.8vw,26px);
+  font-weight:700;
+  line-height:1.65;
+}
+body[data-source-path="/konbu/"] h3.txt-module-4.text-lead+.txt-module-4{margin-top:20px}
+body[data-source-path="/konbu/"] #content-section-4+.txt-module-4{
+  padding:24px 28px;
+  border-top:1px solid var(--line);
+  background:var(--paper);
+  font-size:18px;
+  font-weight:600;
+  line-height:2;
+}
+body[data-source-path="/konbu/"] #content-section-5+.txt-module-4{
+  padding-bottom:28px;
+  border-bottom:1px solid var(--line);
+}
+
+/* Give the application one clear emphasis, with details and consultation below it. */
+body[data-source-path="/konbu/"] .arw-link-2{
+  min-height:58px;
+  padding:18px 36px 18px 20px;
+  border:1px solid var(--line);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:15px;
+  font-weight:600;
+  line-height:1.7;
+}
+body[data-source-path="/konbu/"] .arw-link-2:before{display:none}
+body[data-source-path="/konbu/"] .arw-link-2:after{border-color:var(--accent)}
+body[data-source-path="/konbu/"] .arw-link-2__txt{
+  min-width:0;
+  font-size:15px;
+  line-height:1.75;
+}
+body[data-source-path="/konbu/"] .arw-link-2__txt--small.konbu-link{
+  margin-bottom:8px;
+  font-size:17px;
+  font-weight:700;
+  line-height:1.7;
+}
+body[data-source-path="/konbu/"] .arw-link-2__txt--window{
+  font-size:13px;
+  font-weight:500;
+  line-height:1.8;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half:first-child .arw-link-2{
+  border-color:var(--accent);
+  background:var(--accent);
+  color:white;
+}
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half:first-child .arw-link-2:after{border-color:white}
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half+ .btn-wrap-2__item.half .arw-link-2{
+  border-color:var(--accent);
+  background:var(--ivory);
+  color:var(--accent);
+}
+body[data-source-path="/konbu/"] .arw-link-2:hover,
+body[data-source-path="/konbu/"] .arw-link-2:active{
+  border-color:var(--accent-deep);
+  background:var(--accent-deep);
+  color:white;
+}
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half .arw-link-2:hover,
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half .arw-link-2:active{
+  border-color:var(--accent-deep);
+  background:var(--accent-deep);
+  color:white;
+}
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half+ .btn-wrap-2__item.half .arw-link-2:hover,
+body[data-source-path="/konbu/"] .btn-wrap-2__item.half+ .btn-wrap-2__item.half .arw-link-2:active{
+  border-color:var(--accent-deep);
+  background:var(--accent-deep);
+  color:white;
+}
+body[data-source-path="/konbu/"] .arw-link-2:hover:after,
+body[data-source-path="/konbu/"] .arw-link-2:active:after{border-color:white}
+body[data-source-path="/konbu/"] .border-line{border-color:var(--line)}
+
+/* A consistent number, title, season, explanation and photo rhythm for all eight steps. */
+body[data-source-path="/konbu/"] .konbu-schedule--inner{
+  margin-top:32px;
+  scrollbar-color:var(--accent) var(--paper);
+}
+body[data-source-path="/konbu/"] .konbu-flow{margin-top:48px;gap:0}
+body[data-source-path="/konbu/"] .konbu-step-1{
+  padding:56px 0;
+  border-top:1px solid var(--line);
+}
+body[data-source-path="/konbu/"] .konbu-step-1--content{align-items:flex-start;min-width:0}
+body[data-source-path="/konbu/"] .konbu-step--num{
+  margin:0;
+  padding:0;
+  outline:none;
+  background:transparent;
+  color:var(--accent);
+  font-family:var(--sans);
+  font-size:clamp(38px,3.3vw,48px);
+  font-weight:700;
+  line-height:1.1;
+  letter-spacing:.01em;
+  font-variant-numeric:tabular-nums;
+}
+body[data-source-path="/konbu/"] .konbu-step-1 .konbu-step--ttl{
+  margin-top:16px;
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(25px,2.15vw,31px);
+  font-weight:700;
+  line-height:1.55;
+  white-space:normal;
+}
+body[data-source-path="/konbu/"] .konbu-step-1 .konbu-step--date{
+  margin-top:12px;
+  padding:5px 12px;
+  background:var(--paper);
+  color:var(--accent);
+  font-family:var(--sans);
+  font-size:14px;
+  font-weight:600;
+  line-height:1.8;
+}
+body[data-source-path="/konbu/"] .konbu-step-1 .konbu-step--txt{
+  margin-top:24px;
+  font-size:16px;
+  line-height:2;
+}
+body[data-source-path="/konbu/"] .konbu-step--list{line-height:2}
+body[data-source-path="/konbu/"] .konbu-step--list li:not(:last-child){border-color:var(--line)}
+body[data-source-path="/konbu/"] .konbu-step--list li span{color:var(--accent);font-weight:700}
+body[data-source-path="/konbu/"] .konbu-step-1--img{min-width:0}
+body[data-source-path="/konbu/"] .konbu-step-1--img>img{display:block;width:100%;height:auto}
+body[data-source-path="/konbu/"] .konbu-slide--caption{
+  margin-top:0;
+  padding:12px 14px;
+  border-top:1px solid var(--line);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:13px;
+  line-height:1.75;
+}
+body[data-source-path="/konbu/"] .carousel-controls{
+  justify-content:flex-end;
+  gap:16px;
+  padding:14px 0 0;
+}
+body[data-source-path="/konbu/"] .carousel-controls__count{color:#566d73;font-size:13px}
+body[data-source-path="/konbu/"] .carousel-controls__button{background:var(--ivory);border-color:var(--line)}
+
+/* Related sources remain in their original groups; the local contact is the final reading stop. */
+body[data-source-path="/konbu/"] .konbu-banner{
+  border-top:1px solid var(--line);
+  background:var(--paper);
+}
+body[data-source-path="/konbu/"] .bnr-wrapper-1>.text-center{font-size:17px;line-height:1.9}
+body[data-source-path="/konbu/"] .text-center .small,
+body[data-source-path="/konbu/"] .bnr-comment{font-size:13px;line-height:1.85;color:#566d73}
+body[data-source-path="/konbu/"] .bnr-comment{margin-top:12px}
+body[data-source-path="/konbu/"] .bnr-item a{display:block}
+body[data-source-path="/konbu/"] .bnr-item img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+body[data-source-path="/konbu/"] .bnr-wrapper-2{margin-top:48px}
+body[data-source-path="/konbu/"] .link-ttl--txt{margin:0 18px;font-size:16px;font-weight:700;color:var(--ink)}
+body[data-source-path="/konbu/"] .link-ttl--line{background:var(--line)}
+body[data-source-path="/konbu/"] .sg-sec--access{border-top:1px solid var(--line);background:var(--ivory)}
+body[data-source-path="/konbu/"] .sg-sec--access .sg-sec__ttl{font-size:clamp(23px,2.2vw,31px);line-height:1.65;text-align:left}
+body[data-source-path="/konbu/"] .sg-sec--access .sg-sec__lead{font-size:15px;line-height:1.95}
+body[data-source-path="/konbu/"] .sg-sec--access .sg-sec__lead span{font-size:17px;font-weight:700}
+
+@media(max-width:959px){
+  body[data-source-path="/konbu/"] .ttl-module-4.konbu-ttl:after{width:40px;margin-top:18px}
+  body[data-source-path="/konbu/"] .ttl-module-4.konbu-ttl:not(:first-child){margin-top:48px}
+  body[data-source-path="/konbu/"] .txt-module-4{margin-top:20px}
+  body[data-source-path="/konbu/"] h3.txt-module-4.text-lead{margin-top:36px;padding-left:14px}
+  body[data-source-path="/konbu/"] .konbu-step-1{padding:40px 0;gap:24px}
+  body[data-source-path="/konbu/"] .konbu-flow{margin-top:36px}
+  body[data-source-path="/konbu/"] .konbu-schedule--inner{margin-top:24px}
+  body[data-source-path="/konbu/"] .bnr-wrapper-2{margin-top:36px}
+}
+@media(max-width:599px){
+  body[data-source-path="/konbu/"] .ttl-module-4.konbu-ttl{font-size:25px;line-height:1.65}
+  body[data-source-path="/konbu/"] #content-section-4+.txt-module-4{padding:20px;font-size:17px}
+  body[data-source-path="/konbu/"] .arw-link-2{padding:16px 32px 16px 16px}
+  body[data-source-path="/konbu/"] .arw-link-2__txt--small.konbu-link{font-size:16px}
+  body[data-source-path="/konbu/"] .konbu-step--num{font-size:38px}
+  body[data-source-path="/konbu/"] .konbu-step-1 .konbu-step--ttl{font-size:25px}
+  body[data-source-path="/konbu/"] .konbu-step-1 .konbu-step--txt{margin-top:20px}
+  body[data-source-path="/konbu/"] .bnr-wrapper-1>.text-center{font-size:16px;text-align:left}
+}

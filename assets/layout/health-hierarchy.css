@@ -1,0 +1,76 @@
+/* Health page: reading hierarchy without changing content or source columns. */
+body[data-source-path="/kenko/"] .ttl-module-1__main{line-height:1.5;letter-spacing:.06em}
+body[data-source-path="/kenko/"] .ttl-module-1__main:after{content:"";display:block;width:48px;height:3px;margin:22px auto 0;background:var(--highlight)}
+body[data-source-path="/kenko/"] .p_blockEditor{color:var(--ink)}
+body[data-source-path="/kenko/"] .p_blockEditor :where(h1,h2,h3,p,li){overflow-wrap:anywhere}
+body[data-source-path="/kenko/"] .p_blockEditor h1,
+body[data-source-path="/kenko/"] .p_blockEditor h2,
+body[data-source-path="/kenko/"] .p_blockEditor h3{margin:0;color:var(--ink);font-weight:700;letter-spacing:.015em}
+body[data-source-path="/kenko/"] .p_blockEditor h1{font-size:clamp(26px,2.4vw,34px);line-height:1.55}
+body[data-source-path="/kenko/"] .p_blockEditor h1:after{width:48px;height:3px;margin-top:20px;background:var(--highlight)}
+body[data-source-path="/kenko/"] .p_blockEditor h2{padding:0 0 18px 18px;border-left:3px solid var(--accent);border-bottom:1px solid var(--line);background:transparent;font-size:clamp(24px,2.1vw,30px);line-height:1.6}
+body[data-source-path="/kenko/"] .p_blockEditor>h2.wp-block-heading{font-size:clamp(26px,2.4vw,34px)}
+body[data-source-path="/kenko/"] .p_blockEditor h3{font-size:clamp(20px,1.7vw,24px);line-height:1.75}
+body[data-source-path="/kenko/"] .p_blockEditor p{font-size:16px;line-height:2.05;letter-spacing:.01em}
+body[data-source-path="/kenko/"] .p_blockEditor p+p{margin-top:18px}
+body[data-source-path="/kenko/"] .p_blockEditor strong{color:var(--accent-deep);font-weight:700}
+body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-columns:first-child{align-items:center;padding:28px 0 32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-columns,
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-columns:not(:first-child){gap:36px;margin-bottom:0}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-column{min-width:0}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-column .wp-block-columns{gap:18px}
+body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-spacer[style*="100px"]{height:80px!important}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-spacer[style*="30px"]{height:24px!important}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-spacer[style*="20px"]{height:18px!important}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-image{max-width:100%;margin:0}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-image img{display:block;max-width:100%;height:auto!important;object-fit:contain}
+body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-columns:first-child .wp-block-image img{width:min(100%,320px);margin:auto}
+body[data-source-path="/kenko/"] .p_blockEditor .zoom{padding:14px;border:1px solid var(--line);background:#fff}
+body[data-source-path="/kenko/"] .p_blockEditor .zoom:before{background:var(--accent);opacity:1;transition:none}
+body[data-source-path="/kenko/"] .p_blockEditor .zoom:after{filter:brightness(0) invert(1)}
+body[data-source-path="/kenko/"] .p_blockEditor .image-zoom{min-width:0}
+body[data-source-path="/kenko/"] .p_blockEditor .image-zoom:focus-visible{outline-offset:6px}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-group{padding:22px 24px;border:0;border-left:3px solid var(--accent);background:var(--paper)}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-group p{font-size:14px;line-height:1.95}
+body[data-source-path="/kenko/"] .p_blockEditor .mt-5{gap:32px!important}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-list{margin:0;padding-left:1.4em;font-size:15px;line-height:1.9}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-list li{padding:10px 0 12px 3px;border-bottom:1px solid var(--line)}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-list li:not(:first-child){margin-top:0}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-list li::marker{color:var(--accent)}
+body[data-source-path="/kenko/"] .p_blockEditor>.has-text-align-center{padding-top:28px;border-top:1px solid var(--line);font-size:16px;font-weight:600;line-height:1.9}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons{gap:16px}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button{max-width:100%;border:1px solid var(--accent);background:var(--accent);color:#fff;transition:none}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button:before{display:none}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button:after{right:22px;border-color:currentColor;transition:none}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button__link{display:flex;align-items:center;min-height:54px;min-width:min(250px,100%);max-width:100%;width:auto;padding:15px 56px 15px 24px;border-radius:0;color:#fff;font-size:16px;font-weight:700;line-height:1.65}
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button:hover,
+body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button:active{border-color:var(--accent-deep);background:var(--accent-deep)}
+@media(max-width:959px){
+  body[data-source-path="/kenko/"] .p_blockEditor h1{font-size:clamp(25px,3.6vw,30px)}
+  body[data-source-path="/kenko/"] .p_blockEditor h2{padding-left:14px;padding-bottom:16px;font-size:clamp(23px,3.3vw,28px)}
+  body[data-source-path="/kenko/"] .p_blockEditor>h2.wp-block-heading{font-size:clamp(24px,3.4vw,30px)}
+  body[data-source-path="/kenko/"] .p_blockEditor h3{font-size:clamp(19px,2.8vw,22px)}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-columns,
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-columns:not(:first-child){gap:32px}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-column .wp-block-columns{gap:22px}
+  body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-spacer[style*="100px"]{height:60px!important}
+  body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-columns:first-child{padding:24px 0 28px}
+  body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-columns:first-child .wp-block-image img{width:min(100%,300px)}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-column .wp-image-2583,
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-column .wp-image-2447,
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-column .wp-image-3763{width:min(100%,380px)}
+  body[data-source-path="/kenko/"] .p_blockEditor .mt-5{gap:0!important}
+  body[data-source-path="/kenko/"] .p_blockEditor .zoom{padding:10px}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-group{padding:20px}
+}
+@media(max-width:599px){
+  body[data-source-path="/kenko/"] .ttl-module-1__main:after{width:40px;margin-top:18px}
+  body[data-source-path="/kenko/"] .p_blockEditor p{font-size:15px;line-height:2}
+  body[data-source-path="/kenko/"] .p_blockEditor>.wp-block-spacer[style*="100px"]{height:52px!important}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-spacer[style*="30px"]{height:20px!important}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-spacer[style*="40px"]{height:28px!important}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-list{font-size:14px;line-height:1.95}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-group{padding:18px 16px}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-group p{font-size:13px}
+  body[data-source-path="/kenko/"] .p_blockEditor .wp-block-buttons .wp-block-button__link{min-width:0;min-height:52px;padding:14px 52px 14px 22px;font-size:15px}
+}
