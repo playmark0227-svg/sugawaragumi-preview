@@ -1,0 +1,643 @@
+/* Number page: let the existing figures, photographs and words form a clear reading sequence. */
+body[data-source-path="/number/"] .ttl-module-1__main {
+  max-width: 16em;
+  font-size: clamp(28px, 2.9vw, 42px);
+  line-height: 1.5;
+  letter-spacing: .035em;
+}
+body[data-source-path="/number/"] .ttl-module-1__main::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 22px auto 0;
+  background: var(--highlight);
+}
+body[data-source-path="/number/"] .page-number {
+  padding-top: 72px;
+  padding-bottom: 84px;
+}
+body[data-source-path="/number/"] .page-number > .inner,
+body[data-source-path="/number/"] .qualification > .inner {
+  max-width: 1180px;
+}
+
+/* The company's actual building photo introduces the facts; the number sits in its own reading panel. */
+body[data-source-path="/number/"] .fd-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  min-height: 300px;
+  padding: 0;
+  overflow: hidden;
+  background: var(--ink);
+}
+body[data-source-path="/number/"] .fd-block::before {
+  content: "";
+  display: block;
+  min-height: 300px;
+  background: url("4c435199b3bdec610777.jpg") center / cover no-repeat;
+}
+body[data-source-path="/number/"] .fd-block__year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  min-width: 0;
+  padding: 42px clamp(28px, 3.5vw, 56px);
+  background: var(--ink);
+  color: #fff;
+}
+body[data-source-path="/number/"] .fd-block__year-sub {
+  font-family: var(--sans);
+  font-size: clamp(17px, 1.6vw, 23px);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .08em;
+}
+body[data-source-path="/number/"] .fd-block__year-main {
+  margin-top: 14px;
+  font-size: clamp(64px, 7vw, 108px);
+  line-height: 1.1;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Short figures pair a heading, the precise original value and its original icon. */
+body[data-source-path="/number/"] .tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+  margin-top: 28px;
+}
+body[data-source-path="/number/"] .tiles__item,
+body[data-source-path="/number/"] .tiles__item:not(:first-child),
+body[data-source-path="/number/"] .tiles__from {
+  width: auto;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 30px clamp(24px, 2.6vw, 36px);
+  border: 1px solid var(--line);
+  background: var(--ivory);
+}
+body[data-source-path="/number/"] .tiles__item {
+  display: flex;
+  flex-direction: column;
+}
+body[data-source-path="/number/"] .tiles__ttl {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(20px, 1.75vw, 25px);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: .01em;
+}
+body[data-source-path="/number/"] .tiles__note {
+  margin-top: 10px;
+  color: #586e72;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+}
+body[data-source-path="/number/"] .number {
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: left;
+}
+body[data-source-path="/number/"] .number__main {
+  font-size: clamp(54px, 5.2vw, 76px);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+body[data-source-path="/number/"] .number__per {
+  font-size: clamp(25px, 2.4vw, 34px);
+}
+body[data-source-path="/number/"] .tiles__item figure {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+body[data-source-path="/number/"] .tiles__item figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+body[data-source-path="/number/"] .gender-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: end;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 28px;
+}
+body[data-source-path="/number/"] .gender-ratio,
+body[data-source-path="/number/"] .gender-ratio:not(:first-child) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  min-width: 0;
+  gap: 12px;
+  margin: 0;
+}
+body[data-source-path="/number/"] .gender-ratio__img {
+  flex: 0 0 clamp(34px, 4vw, 54px);
+  width: clamp(34px, 4vw, 54px);
+  margin: 0;
+}
+body[data-source-path="/number/"] .gender-wrap .number {
+  width: auto;
+  text-align: left;
+}
+body[data-source-path="/number/"] .gender-wrap .number__main {
+  font-size: clamp(43px, 4.2vw, 61px);
+}
+body[data-source-path="/number/"] .gender-wrap .number__per {
+  font-size: clamp(20px, 2vw, 29px);
+}
+body[data-source-path="/number/"] :is(.married, .ave-works, .turnover, .reinstatement, .has-home, .travel) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  gap: 20px;
+  margin: auto 0 0;
+  padding-top: 24px;
+  text-align: left;
+}
+body[data-source-path="/number/"] :is(.married__img, .ave-works__img, .turnover__img, .reinstatement__img, .has-home__img, .travel__img) {
+  flex: 0 1 min(30%, 116px);
+  width: min(30%, 116px);
+  max-width: 116px;
+  margin: 0;
+}
+body[data-source-path="/number/"] .travel-txt {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Graphs contain labels and figures inside the source SVG: never crop them. */
+body[data-source-path="/number/"] .tiles__item:nth-child(5),
+body[data-source-path="/number/"] .tiles__item:nth-child(6),
+body[data-source-path="/number/"] .tiles__item:nth-child(7) {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(180px, .55fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+  padding-block: 32px;
+}
+body[data-source-path="/number/"] .tiles__item:nth-child(5) .tiles__ttl,
+body[data-source-path="/number/"] .tiles__item:nth-child(6) .tiles__ttl,
+body[data-source-path="/number/"] .tiles__item:nth-child(7) .tiles__ttl {
+  align-self: center;
+  padding-bottom: 20px;
+}
+body[data-source-path="/number/"] :is(.age-chart, .chart) {
+  position: static;
+  top: auto;
+  width: 100%;
+  max-width: 460px;
+  min-width: 0;
+  margin: 0 auto;
+}
+body[data-source-path="/number/"] :is(.age-chart__img, .chart__img) {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+body[data-source-path="/number/"] :is(.age-chart__img, .chart__img) img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* The final figure gets its own horizontal rhythm before the regional breakdown. */
+body[data-source-path="/number/"] .tiles__item:nth-child(10) {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(170px, .5fr) minmax(190px, .6fr) minmax(220px, .85fr);
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 24px;
+}
+body[data-source-path="/number/"] .tiles__item:nth-child(10) .tiles__ttl {
+  grid-column: 1;
+  grid-row: 1;
+}
+body[data-source-path="/number/"] .tiles__item:nth-child(10) .tiles__note {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+}
+body[data-source-path="/number/"] .tiles__item:nth-child(10) .travel {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  margin: 0;
+  padding: 0;
+}
+body[data-source-path="/number/"] .tiles__item:nth-child(10) .travel-txt {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  margin: 0;
+  padding: 0 0 0 24px;
+  border-top: 0;
+  border-left: 1px solid var(--line);
+}
+body[data-source-path="/number/"] .tiles__from {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+}
+body[data-source-path="/number/"] .tiles__from-left,
+body[data-source-path="/number/"] .tiles__from-right {
+  width: auto;
+  min-width: 0;
+}
+body[data-source-path="/number/"] .tiles__from-left img {
+  display: block;
+  width: min(100%, 310px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+body[data-source-path="/number/"] .tiles__ttl--from {
+  margin-bottom: 12px;
+}
+body[data-source-path="/number/"] .area {
+  width: 100%;
+  margin-top: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+body[data-source-path="/number/"] .area__row {
+  border-bottom: 1px solid var(--line);
+}
+body[data-source-path="/number/"] .area__row:last-child {
+  border-bottom: 0;
+}
+body[data-source-path="/number/"] .area__ttl {
+  padding: 9px 4px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.4vw, 19px);
+  font-weight: 600;
+  line-height: 1.6;
+}
+body[data-source-path="/number/"] .area__num {
+  padding: 9px 4px;
+  text-align: right;
+}
+body[data-source-path="/number/"] .area__num-main,
+body[data-source-path="/number/"] .area__row--large .area__num-main,
+body[data-source-path="/number/"] .area__row--medium .area__num-main {
+  font-size: clamp(30px, 3vw, 48px);
+  font-variant-numeric: tabular-nums;
+}
+body[data-source-path="/number/"] .area__num-per,
+body[data-source-path="/number/"] .area__row--large .area__num-per,
+body[data-source-path="/number/"] .area__row--medium .area__num-per {
+  font-size: clamp(17px, 1.6vw, 24px);
+}
+body[data-source-path="/number/"] .area__row--large .area__ttl {
+  font-size: clamp(18px, 1.7vw, 23px);
+}
+
+/* Credentials are a scanned list, with the date kept adjacent to the source heading. */
+body[data-source-path="/number/"] .qualification {
+  margin-top: 0;
+  padding-top: 76px;
+  padding-bottom: 84px;
+  background: var(--paper);
+}
+body[data-source-path="/number/"] .qualification .ttl-module-3 {
+  margin: 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+  color: var(--ink);
+  font-size: clamp(26px, 2.35vw, 34px);
+  line-height: 1.5;
+  text-align: left;
+}
+body[data-source-path="/number/"] .qualification .txt-module-5 {
+  margin-top: 10px;
+  color: #586e72;
+  line-height: 1.7;
+}
+body[data-source-path="/number/"] .qualification .list-module-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+  margin-top: 24px;
+}
+body[data-source-path="/number/"] .qualification .list-module-3__box,
+body[data-source-path="/number/"] .qualification .list-module-3__box:not(:first-child),
+body[data-source-path="/number/"] .qualification .list-module-3__box:not(:nth-child(3n+3)) {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: var(--ivory);
+}
+body[data-source-path="/number/"] .qualification .list-module-3__th {
+  width: 77%;
+}
+body[data-source-path="/number/"] .qualification .list-module-3__td {
+  width: 23%;
+  font-variant-numeric: tabular-nums;
+}
+body[data-source-path="/number/"] .qualification :is(.list-module-3__th, .list-module-3__td) {
+  padding: 12px 13px;
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+body[data-source-path="/number/"] .qualification .list-module-3__row--first {
+  background: var(--ink) !important;
+  color: #fff;
+}
+body[data-source-path="/number/"] .qualification .list-module-3__row--first :is(.list-module-3__th, .list-module-3__td) {
+  color: #fff;
+  font-weight: 700;
+}
+body[data-source-path="/number/"] .qualification .list-module-3__row:not(:first-child) {
+  border-bottom: 1px solid var(--line);
+}
+body[data-source-path="/number/"] .qualification .list-module-3__row:not(:first-child):nth-child(odd) {
+  background: #f8faf8;
+}
+
+/* Finish with a usable map and address at both viewport sizes. */
+body[data-source-path="/number/"] .sg-sec--access {
+  overflow: visible;
+  padding: 76px 0 80px 240px;
+  background: var(--ivory);
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__access {
+  display: grid;
+  grid-template-columns: minmax(260px, .65fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: 40px;
+  max-width: 1180px;
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__access__left {
+  width: auto;
+  padding: 0;
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__ttl {
+  margin: 0;
+  font-size: clamp(27px, 2.2vw, 34px);
+  line-height: 1.5;
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__lead {
+  margin-top: 24px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 2;
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__lead + .sg-sec__lead {
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__access__right {
+  width: 100%;
+  height: 390px;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+}
+body[data-source-path="/number/"] .sg-sec--access .sg-sec__access__right iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1279px) {
+  body[data-source-path="/number/"] .qualification .list-module-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) {
+    grid-template-columns: minmax(150px, .5fr) minmax(0, .65fr);
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) .tiles__ttl {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) .tiles__note {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) .travel {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) .travel-txt {
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 959px) {
+  body[data-source-path="/number/"] .page-number {
+    padding: 56px 0 64px;
+  }
+  body[data-source-path="/number/"] .page-number > .inner {
+    padding-inline: var(--gutter);
+  }
+  body[data-source-path="/number/"] .fd-block {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  body[data-source-path="/number/"] .fd-block::before {
+    min-height: clamp(200px, 32vw, 300px);
+    background-image: url("57f8762c28377a852f55.jpg");
+    background-position: center 42%;
+  }
+  body[data-source-path="/number/"] .fd-block__year {
+    min-height: 150px;
+    padding: 26px 32px;
+  }
+  body[data-source-path="/number/"] .fd-block__year-main {
+    margin-top: 8px;
+    font-size: clamp(66px, 11vw, 88px);
+  }
+  body[data-source-path="/number/"] .tiles {
+    gap: 14px;
+    margin-top: 20px;
+  }
+  body[data-source-path="/number/"] .tiles__item,
+  body[data-source-path="/number/"] .tiles__item:not(:first-child),
+  body[data-source-path="/number/"] .tiles__from {
+    padding: 24px;
+  }
+  body[data-source-path="/number/"] .number__main {
+    font-size: clamp(52px, 7vw, 68px);
+  }
+  body[data-source-path="/number/"] .gender-wrap .number__main {
+    font-size: clamp(41px, 6vw, 56px);
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(5),
+  body[data-source-path="/number/"] .tiles__item:nth-child(6),
+  body[data-source-path="/number/"] .tiles__item:nth-child(7) {
+    gap: 24px;
+  }
+  body[data-source-path="/number/"] :is(.age-chart, .chart) {
+    max-width: 390px;
+  }
+  body[data-source-path="/number/"] .tiles__from {
+    gap: 20px;
+  }
+  body[data-source-path="/number/"] .tiles__from > .tiles__ttl.sp {
+    grid-column: 1 / -1;
+  }
+  body[data-source-path="/number/"] .qualification {
+    padding: 64px 0;
+  }
+  body[data-source-path="/number/"] .qualification .list-module-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body[data-source-path="/number/"] .sg-sec--access {
+    padding: 56px 0;
+  }
+  body[data-source-path="/number/"] .sg-sec--access .sg-sec__access {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+    max-width: 800px;
+  }
+  body[data-source-path="/number/"] .sg-sec--access .sg-sec__access__right {
+    height: 360px;
+  }
+}
+@media (max-width: 699px) {
+  body[data-source-path="/number/"] .tiles {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(5),
+  body[data-source-path="/number/"] .tiles__item:nth-child(6),
+  body[data-source-path="/number/"] .tiles__item:nth-child(7) {
+    grid-column: auto;
+    display: flex;
+    gap: 0;
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) {
+    grid-column: auto;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) .travel {
+    margin-top: 0;
+    padding-top: 22px;
+  }
+  body[data-source-path="/number/"] .tiles__item:nth-child(10) .travel-txt {
+    margin-top: 16px;
+    padding: 16px 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+  body[data-source-path="/number/"] .tiles__from {
+    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body[data-source-path="/number/"] .tiles__from-left {
+    justify-self: center;
+  }
+  body[data-source-path="/number/"] .tiles__from-left img {
+    max-width: 240px;
+  }
+  body[data-source-path="/number/"] .qualification .list-module-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 599px) {
+  body[data-source-path="/number/"] .ttl-module-1__main::after {
+    width: 40px;
+    margin-top: 18px;
+  }
+  body[data-source-path="/number/"] .page-number {
+    padding: 48px 0 56px;
+  }
+  body[data-source-path="/number/"] .fd-block::before {
+    min-height: 215px;
+  }
+  body[data-source-path="/number/"] .tiles__item,
+  body[data-source-path="/number/"] .tiles__item:not(:first-child),
+  body[data-source-path="/number/"] .tiles__from {
+    padding: 24px 20px;
+  }
+  body[data-source-path="/number/"] .tiles__ttl {
+    font-size: 22px;
+  }
+  body[data-source-path="/number/"] .gender-wrap {
+    gap: 10px;
+    padding-top: 24px;
+  }
+  body[data-source-path="/number/"] .gender-ratio,
+  body[data-source-path="/number/"] .gender-ratio:not(:first-child) {
+    gap: 7px;
+  }
+  body[data-source-path="/number/"] .gender-ratio__img {
+    flex-basis: 38px;
+    width: 38px;
+  }
+  body[data-source-path="/number/"] .gender-wrap .number__main {
+    font-size: clamp(39px, 10vw, 52px);
+  }
+  body[data-source-path="/number/"] .gender-wrap .number__per {
+    font-size: 20px;
+  }
+  body[data-source-path="/number/"] :is(.age-chart, .chart) {
+    margin-top: 24px;
+  }
+  body[data-source-path="/number/"] .qualification {
+    padding: 56px 0;
+  }
+  body[data-source-path="/number/"] .qualification .ttl-module-3 {
+    font-size: 25px;
+  }
+  body[data-source-path="/number/"] .qualification :is(.list-module-3__th, .list-module-3__td) {
+    padding: 12px 10px;
+  }
+  body[data-source-path="/number/"] .sg-sec--access .sg-sec__access__right {
+    height: 320px;
+  }
+}
+@media (max-width: 359px) {
+  body[data-source-path="/number/"] .gender-ratio__img {
+    flex-basis: 31px;
+    width: 31px;
+  }
+  body[data-source-path="/number/"] .gender-wrap .number__main {
+    font-size: 37px;
+  }
+  body[data-source-path="/number/"] .gender-wrap .number__per {
+    font-size: 18px;
+  }
+  body[data-source-path="/number/"] .tiles__item,
+  body[data-source-path="/number/"] .tiles__item:not(:first-child),
+  body[data-source-path="/number/"] .tiles__from {
+    padding-inline: 16px;
+  }
+}

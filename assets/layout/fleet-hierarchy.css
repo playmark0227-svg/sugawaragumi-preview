@@ -1,0 +1,515 @@
+/* Fleet index: vessel photography, specifications and original document links. */
+body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > .inner{
+  min-width:0;
+}
+
+/* The lead vessel has its own image and reading area. The source order is intact. */
+body[data-source-path="/equipment/senpaku/"] .box-module-4{
+  position:relative;
+  left:auto;
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  width:100%;
+  margin:0;
+  padding:0;
+  border:1px solid var(--line);
+  background:var(--ivory);
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4 > img{
+  display:block;
+  position:static;
+  width:100%;
+  height:auto;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  object-position:center;
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap{
+  position:relative;
+  right:auto;
+  bottom:auto;
+  z-index:auto;
+  box-sizing:border-box;
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:clamp(26px,3.2vw,46px);
+  border-top:3px solid var(--accent);
+  background:var(--ivory);
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .ttl-module-4{
+  margin:0;
+  color:var(--ink);
+  font-size:clamp(25px,2.45vw,34px);
+  font-weight:700;
+  line-height:1.5;
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .ttl-module-4:after{
+  width:42px;
+  height:3px;
+  margin-top:18px;
+  background:var(--highlight);
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1{
+  margin-top:22px;
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.9;
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1 br{display:none}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1 a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  box-sizing:border-box;
+  width:100%;
+  min-height:48px;
+  margin-top:8px;
+  padding:11px 14px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--accent-deep);
+  font-size:14px;
+  font-weight:700;
+  line-height:1.5;
+  text-decoration:none;
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1 a:first-of-type{margin-top:24px}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1 a:after{
+  content:"";
+  flex:none;
+  width:7px;
+  height:7px;
+  border-top:2px solid currentColor;
+  border-right:2px solid currentColor;
+  transform:rotate(45deg);
+}
+body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1 a:is(:hover,:focus-visible){
+  border-color:var(--accent);
+  background:var(--paper);
+}
+
+/* Keep the documentary movie directly after the lead vessel, at a useful ratio. */
+body[data-source-path="/equipment/senpaku/"] .video-box{
+  box-sizing:border-box;
+  width:min(100%,880px);
+  margin:38px auto 0;
+  padding:8px;
+  border:1px solid var(--line);
+  background:var(--paper);
+}
+body[data-source-path="/equipment/senpaku/"] .video-box iframe{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  border:0;
+}
+
+/* Two generous columns leave enough space for ship names and specifications. */
+body[data-source-path="/equipment/senpaku/"] .list-module-4--four{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:stretch;
+  gap:24px;
+  margin-top:54px;
+  padding:0;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4--four .list-module-4__item{
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  min-width:0;
+  width:100%;
+  margin:0;
+  border:1px solid var(--line);
+  background:#fff;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item__link{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  min-width:0;
+  text-decoration:none;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item__thumb{
+  flex:none;
+  width:100%;
+  aspect-ratio:16/10;
+  background-position:center;
+  background-size:contain;
+  background-color:var(--paper)!important;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item__thumb:before{
+  padding-bottom:0;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item__ttl{
+  margin:0!important;
+  padding:22px 24px 0;
+  color:var(--ink);
+  font-size:clamp(19px,1.6vw,23px);
+  font-weight:700;
+  line-height:1.55;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item__txt{
+  flex:1;
+  margin:0!important;
+  padding:8px 24px 22px;
+  border:0!important;
+  background:#fff!important;
+  color:#455c60!important;
+  font-size:15px;
+  line-height:1.85;
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item > .fleet-brochure{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  box-sizing:border-box;
+  width:100%;
+  min-height:48px;
+  margin-top:auto;
+  padding:12px 24px;
+  border-top:1px solid var(--line);
+  background:var(--ivory);
+  color:var(--accent-deep);
+  font-size:14px;
+  font-weight:700;
+  line-height:1.6;
+  text-decoration:none;
+}
+body[data-source-path="/equipment/senpaku/"] .fleet-brochure:after{
+  content:"";
+  flex:none;
+  width:7px;
+  height:7px;
+  border-top:2px solid currentColor;
+  border-right:2px solid currentColor;
+  transform:rotate(45deg);
+}
+body[data-source-path="/equipment/senpaku/"] .fleet-brochure:is(:hover,:focus-visible){
+  background:var(--paper);
+  color:var(--accent);
+}
+body[data-source-path="/equipment/senpaku/"] .list-module-4__item__link:is(:hover,:focus-visible) .list-module-4__item__ttl{
+  color:var(--accent);
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+/* The statutory material remains last, with a clearly separate document area. */
+body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > h3{
+  box-sizing:border-box;
+  width:calc(100% - 100px);
+  max-width:820px;
+  margin:80px auto 0!important;
+  padding-top:30px;
+  border-top:1px solid var(--line);
+  color:var(--ink)!important;
+  font-size:clamp(25px,2.25vw,32px)!important;
+  font-weight:700;
+  line-height:1.55!important;
+  text-align:left!important;
+}
+body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > h3:after{
+  content:"";
+  display:block;
+  width:42px;
+  height:3px;
+  margin-top:16px;
+  background:var(--highlight);
+}
+body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > .btn-wrap-2{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  box-sizing:border-box;
+  width:calc(100% - 100px);
+  max-width:820px!important;
+  margin:28px auto 0!important;
+  padding:0;
+}
+body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item{
+  width:100%;
+  max-width:none;
+  margin:0;
+}
+body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item .arw-link-2{
+  min-height:64px;
+  padding:16px 48px 16px 20px;
+  border-width:1px;
+  border-color:var(--line);
+  background:var(--ivory);
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.6;
+}
+body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item .arw-link-2:after{border-color:var(--accent)}
+body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item .arw-link-2__txt{text-align:left}
+body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item .arw-link-2:is(:hover,:focus-visible){
+  border-color:var(--accent);
+  color:#fff;
+}
+body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item .arw-link-2:is(:hover,:focus-visible):after{border-color:#fff}
+
+@media(min-width:1280px){
+  body[data-source-path="/equipment/senpaku/"] .box-module-4{
+    grid-template-columns:minmax(0,1.65fr) minmax(292px,.95fr);
+  }
+  body[data-source-path="/equipment/senpaku/"] .box-module-4 > img{
+    height:100%;
+    aspect-ratio:4/3;
+  }
+  body[data-source-path="/equipment/senpaku/"] .box-module-4__cap{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-top:0;
+    border-left:3px solid var(--accent);
+  }
+}
+@media(max-width:959px){
+  body[data-source-path="/equipment/senpaku/"] .video-box{margin-top:28px}
+  body[data-source-path="/equipment/senpaku/"] .list-module-4--four{gap:18px;margin-top:42px}
+  body[data-source-path="/equipment/senpaku/"] .list-module-4__item__ttl{padding:18px 18px 0;font-size:19px}
+  body[data-source-path="/equipment/senpaku/"] .list-module-4__item__txt{padding:7px 18px 18px;font-size:14px}
+  body[data-source-path="/equipment/senpaku/"] .list-module-4__item > .fleet-brochure{padding:11px 18px}
+  body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > h3,
+  body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > .btn-wrap-2{
+    width:calc(100% - 2 * var(--gutter));
+  }
+}
+@media(max-width:599px){
+  body[data-source-path="/equipment/senpaku/"] .box-module-4 > img{aspect-ratio:4/3}
+  body[data-source-path="/equipment/senpaku/"] .box-module-4__cap{padding:24px 20px}
+  body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .ttl-module-4{font-size:24px}
+  body[data-source-path="/equipment/senpaku/"] .box-module-4__cap .txt-module-1{font-size:15px}
+  body[data-source-path="/equipment/senpaku/"] .video-box{margin-top:24px;padding:5px}
+  body[data-source-path="/equipment/senpaku/"] .list-module-4--four{grid-template-columns:minmax(0,1fr);gap:18px;margin-top:38px}
+  body[data-source-path="/equipment/senpaku/"] .list-module-4__item__thumb{aspect-ratio:16/9}
+  body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > h3{
+    margin-top:60px!important;
+    padding-top:24px;
+    font-size:24px!important;
+  }
+  body[data-source-path="/equipment/senpaku/"] .main > .sg-sec:not(.sg-sec--access) > .btn-wrap-2{
+    grid-template-columns:minmax(0,1fr);
+    gap:10px;
+    margin-top:24px!important;
+  }
+  body[data-source-path="/equipment/senpaku/"] .btn-wrap-2__item .arw-link-2{min-height:56px;font-size:15px}
+}
+
+/* Three existing vessel detail pages: photograph, followed by the original
+   台船 / クレーン・バックホウ / 押船・曳船 specification sequence. */
+body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) > .inner{
+  max-width:1100px;
+}
+body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-2{
+  margin:0;
+  padding:0 0 25px;
+  border-bottom:1px solid var(--line);
+  color:var(--ink);
+  font-size:clamp(27px,2.7vw,38px);
+  font-weight:700;
+  line-height:1.5;
+  text-align:left;
+}
+body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-2__note{
+  display:block;
+  margin:10px 0 0;
+  color:var(--accent);
+  font-size:clamp(16px,1.5vw,19px);
+  font-weight:600;
+  line-height:1.7;
+}
+body[data-source-path^="/equipment/sugawara"] .equipment__photo{
+  box-sizing:border-box;
+  width:100%;
+  margin:30px 0 4px;
+  padding:8px;
+  border:1px solid var(--line);
+  background:var(--paper);
+}
+body[data-source-path^="/equipment/sugawara"] .equipment__photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4/3;
+  object-fit:contain;
+}
+body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-3{
+  margin:56px 0 0;
+  padding:0 0 14px 16px;
+  border-bottom:1px solid var(--line);
+  border-left:3px solid var(--accent);
+  color:var(--ink);
+  font-size:clamp(22px,2vw,27px);
+  font-weight:700;
+  line-height:1.55;
+  text-align:left;
+}
+body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .table-module-1{
+  width:100%;
+  margin-top:20px;
+  border:1px solid var(--line);
+  border-collapse:collapse;
+  table-layout:fixed;
+  color:var(--ink);
+  font-size:15px;
+  line-height:1.8;
+}
+body[data-source-path^="/equipment/sugawara"] .table-module-1__row{
+  border-top:1px solid var(--line);
+}
+body[data-source-path^="/equipment/sugawara"] .table-module-1__th{
+  box-sizing:border-box;
+  width:34%;
+  padding:16px 20px;
+  background:var(--paper);
+  color:var(--ink);
+  font-weight:700;
+  line-height:1.7;
+  text-align:left;
+}
+body[data-source-path^="/equipment/sugawara"] .table-module-1__td{
+  box-sizing:border-box;
+  width:66%;
+  padding:16px 22px;
+  background:#fff;
+  color:#455c60;
+  font-variant-numeric:tabular-nums;
+  line-height:1.85;
+  overflow-wrap:anywhere;
+}
+body[data-source-path^="/equipment/sugawara"] .table-module-1__td a[target="_blank"]{
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  box-sizing:border-box;
+  min-width:190px;
+  min-height:48px;
+  padding:10px 16px;
+  border:1px solid var(--accent);
+  background:var(--accent);
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  line-height:1.5;
+  text-decoration:none;
+}
+body[data-source-path^="/equipment/sugawara"] .table-module-1__td a[target="_blank"]:after{
+  content:"";
+  flex:none;
+  width:7px;
+  height:7px;
+  border-top:2px solid currentColor;
+  border-right:2px solid currentColor;
+  transform:rotate(45deg);
+}
+body[data-source-path^="/equipment/sugawara"] .table-module-1__td a[target="_blank"]:is(:hover,:focus-visible){
+  border-color:var(--accent-deep);
+  background:var(--accent-deep);
+}
+
+@media(min-width:1280px){
+  body[data-source-path="/equipment/sugawara10/"] .main > .sg-sec:not(.sg-sec--access) > .inner,
+  body[data-source-path="/equipment/sugawara11/"] .main > .sg-sec:not(.sg-sec--access) > .inner{
+    display:grid;
+    grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+    column-gap:32px;
+    align-items:start;
+  }
+  body[data-source-path="/equipment/sugawara10/"] .ttl-module-2,
+  body[data-source-path="/equipment/sugawara11/"] .ttl-module-2,
+  body[data-source-path="/equipment/sugawara10/"] .ttl-module-3,
+  body[data-source-path="/equipment/sugawara11/"] .ttl-module-3,
+  body[data-source-path="/equipment/sugawara10/"] .table-module-1,
+  body[data-source-path="/equipment/sugawara11/"] .table-module-1{
+    grid-column:1 / -1;
+  }
+  body[data-source-path="/equipment/sugawara10/"] .equipment__photo,
+  body[data-source-path="/equipment/sugawara11/"] .equipment__photo{
+    grid-column:1;
+    grid-row:2 / span 2;
+    align-self:stretch;
+    margin:32px 0 0;
+  }
+  body[data-source-path="/equipment/sugawara10/"] .equipment__photo img,
+  body[data-source-path="/equipment/sugawara11/"] .equipment__photo img{
+    height:100%;
+  }
+  body[data-source-path="/equipment/sugawara10/"] .equipment__photo + .ttl-module-3,
+  body[data-source-path="/equipment/sugawara11/"] .equipment__photo + .ttl-module-3{
+    grid-column:2;
+    grid-row:2;
+    margin-top:32px;
+  }
+  body[data-source-path="/equipment/sugawara10/"] .equipment__photo + .ttl-module-3 + .table-module-1,
+  body[data-source-path="/equipment/sugawara11/"] .equipment__photo + .ttl-module-3 + .table-module-1{
+    grid-column:2;
+    grid-row:3;
+    margin-top:16px;
+  }
+}
+@media(max-width:959px){
+  body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-2{
+    font-size:clamp(25px,4vw,32px);
+  }
+  body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-3{
+    margin-top:44px;
+    font-size:clamp(21px,3vw,25px);
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1{
+    font-size:14px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__th{
+    padding:13px 14px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__td{
+    padding:13px 16px;
+  }
+}
+@media(max-width:599px){
+  body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-2{
+    padding-bottom:20px;
+    font-size:26px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-2__note{
+    font-size:16px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .equipment__photo{
+    margin-top:24px;
+    padding:5px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .main > .sg-sec:not(.sg-sec--access) .ttl-module-3{
+    margin-top:40px;
+    padding-bottom:12px;
+    font-size:22px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1,
+  body[data-source-path^="/equipment/sugawara"] .table-module-1 tbody,
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__row,
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__th,
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__td{
+    display:block;
+    width:100%;
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__row:first-child{border-top:0}
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__th{
+    padding:10px 14px 4px;
+    font-size:13px;
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__td{
+    padding:6px 14px 13px;
+    font-size:15px;
+    line-height:1.8;
+  }
+  body[data-source-path^="/equipment/sugawara"] .table-module-1__td a[target="_blank"]{
+    width:100%;
+    min-width:0;
+  }
+}
