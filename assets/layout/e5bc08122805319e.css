@@ -120,7 +120,7 @@ INDEX SCSS
       flex-wrap: nowrap;
   right: 0;
   line-height: 1;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 @media screen and (max-width: 959px) {
   .mv__news {
@@ -325,7 +325,7 @@ INDEX SCSS
 .ship-block__left__txt {
   position: relative;
   z-index: 1;
-  border: solid 1px #ccc;
+  border: solid 1px var(--line);
 }
 @media screen and (max-width: 959px) {
   .ship-block__left__txt {
@@ -519,7 +519,7 @@ INDEX SCSS
 .rec-feature__ttl {
   margin-right: 1px;
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 @media screen and (max-width: 959px) {
   .rec-feature__ttl {
@@ -536,7 +536,7 @@ INDEX SCSS
   }
 }
 .rec-feature__link {
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 @media screen and (max-width: 959px) {
   .rec-feature__link {
@@ -736,7 +736,7 @@ INDEX SCSS
   color: #fff;
 }
 .adjust .arw-link-1:hover {
-  color: #dcdcdc;
+  color: var(--line);
 }
 .adjust .arw-link-1:before {
   background-color: #fff;
@@ -746,11 +746,11 @@ INDEX SCSS
   border-right: solid 1px #fff;
 }
 .adjust .arw-link-1:hover:before {
-  background-color: #dcdcdc;
+  background-color: var(--line);
 }
 .adjust .arw-link-1:hover:after {
-  border-top: solid 1px #dcdcdc;
-  border-right: solid 1px #dcdcdc;
+  border-top: solid 1px var(--line);
+  border-right: solid 1px var(--line);
 }
 @media screen and (max-width: 959px) {
   .adjust {
@@ -784,9 +784,9 @@ INDEX SCSS
 .effort__btn {
   display: block;
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", YuMincho, "游明朝", serif;
-  color: #d84b3d;
+  color: var(--accent);
   font-weight: bold;
-  border: 1px solid #d84b3d;
+  border: 1px solid var(--accent);
   padding: 10px 40px 10px 40px;
   width: 300px;
   margin-top: 20px;
@@ -810,8 +810,8 @@ INDEX SCSS
   right: 20px;
   -webkit-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
-  border-top: solid 2px #d84b3d;
-  border-right: solid 2px #d84b3d;
+  border-top: solid 2px var(--accent);
+  border-right: solid 2px var(--accent);
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
@@ -822,7 +822,7 @@ INDEX SCSS
   }
 }
 .effort__btn:hover {
-  background-color: #d84b3d;
+  background-color: var(--accent);
   color: #fff;
 }
 .effort__btn:hover::after {
@@ -870,7 +870,7 @@ INDEX SCSS
 
 .loading__line circle {
   fill: none;
-  stroke: #d84b3d;
+  stroke: var(--accent);
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-dasharray: 942.4777960769;

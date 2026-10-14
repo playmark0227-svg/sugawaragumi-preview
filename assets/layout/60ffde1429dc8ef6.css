@@ -93,7 +93,7 @@ INDEX SCSS
 }
 
 .bg-gray {
-  background-color: #eee;
+  background-color: var(--paper);
   margin-top: 30px;
 }
 @media screen and (max-width: 959px) {
@@ -145,7 +145,7 @@ INDEX SCSS
 }
 .bg-gray__tel a {
   font-weight: bold;
-  color: #d84b3d;
+  color: var(--accent);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }

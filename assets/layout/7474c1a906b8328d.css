@@ -3,7 +3,7 @@
 News SCSS
 ========================================================= */
 .category-nav {
-  background-color: #eee;
+  background-color: var(--paper);
 }
 
 @media screen and (min-width: 960px) {
@@ -69,7 +69,7 @@ News SCSS
   width: 100%;
   text-align: center;
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -128,7 +128,7 @@ News SCSS
 
 .news-list__item__link {
   width: 100%;
-  color: #222;
+  color: var(--ink);
 }
 
 @media screen and (max-width: 959px) {
@@ -201,7 +201,7 @@ News SCSS
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #d84b3d;
+  background-color: var(--accent);
   mix-blend-mode: multiply;
   z-index: 0;
   -webkit-transition: all 0.4s ease;
@@ -253,7 +253,7 @@ News SCSS
 }
 
 .news-list__item__link:hover .txt-box__ttl, .news-list__item__link:active .txt-box__ttl {
-  color: #d84b3d;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -343,7 +343,7 @@ News SCSS
 
 .page-nav .page-numbers {
   display: inline-block;
-  color: #d84b3d;
+  color: var(--accent);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -378,17 +378,17 @@ News SCSS
 }
 
 .page-nav .page-numbers:not(.dots) {
-  border-bottom: 2px solid #d84b3d;
+  border-bottom: 2px solid var(--accent);
 }
 
 .page-nav .page-numbers:not(.dots):hover, .page-nav .page-numbers:not(.dots):active {
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 .page-nav .page-numbers.current {
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -447,8 +447,8 @@ News SCSS
 }
 
 .page-nav .page-numbers.next:before {
-  border-top: solid 1px #d84b3d;
-  border-right: solid 1px #d84b3d;
+  border-top: solid 1px var(--accent);
+  border-right: solid 1px var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -476,8 +476,8 @@ News SCSS
 }
 
 .page-nav .page-numbers.prev:before {
-  border-bottom: solid 1px #d84b3d;
-  border-left: solid 1px #d84b3d;
+  border-bottom: solid 1px var(--accent);
+  border-left: solid 1px var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -493,7 +493,7 @@ News SCSS
 }
 
 .article__head {
-  color: #d84b3d;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -512,7 +512,7 @@ News SCSS
   content: "";
   display: block;
   height: 2px;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -578,7 +578,7 @@ News SCSS
 }
 
 .article__content h1 {
-  color: #d84b3d;
+  color: var(--accent);
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", YuMincho, "游明朝", serif;
 }
 
@@ -598,7 +598,7 @@ News SCSS
   content: "";
   display: block;
   height: 2px;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -628,10 +628,10 @@ News SCSS
 }
 
 .article__content h2 {
-  color: #d84b3d;
+  color: var(--accent);
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", YuMincho, "游明朝", serif;
-  background-color: #eee;
-  border-left: 3px solid #d84b3d;
+  background-color: var(--paper);
+  border-left: 3px solid var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -741,7 +741,7 @@ News SCSS
 }
 
 .article__content p a {
-  color: #d84b3d;
+  color: var(--accent);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -880,11 +880,11 @@ News SCSS
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", YuMincho, "游明朝", serif;
   position: relative;
   display: block;
-  color: #d84b3d;
+  color: var(--accent);
   line-height: 1;
   border-width: 2px;
   border-style: solid;
-  border-color: #d84b3d;
+  border-color: var(--accent);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -900,7 +900,7 @@ News SCSS
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   z-index: 0;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 .article__content .wp-block-buttons .wp-block-button:after {
@@ -909,8 +909,8 @@ News SCSS
   display: block;
   top: 50%;
   right: 15px;
-  border-top: solid 2px #d84b3d;
-  border-right: solid 2px #d84b3d;
+  border-top: solid 2px var(--accent);
+  border-right: solid 2px var(--accent);
   -webkit-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
   -webkit-transition: all 0.2s ease;
@@ -953,7 +953,7 @@ News SCSS
   z-index: 1;
   padding: 0;
   background-color: transparent;
-  color: #d84b3d;
+  color: var(--accent);
   max-width: 360px;
   min-width: 200px;
   width: -webkit-fit-content;
@@ -1006,7 +1006,7 @@ News SCSS
   max-width: 210px;
   text-align: center;
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1039,8 +1039,8 @@ News SCSS
 .post-nav__prev, .post-nav__next {
   position: relative;
   display: inline-block;
-  color: #d84b3d;
-  border-bottom: 2px solid #d84b3d;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1083,7 +1083,7 @@ News SCSS
 
 .post-nav__prev:hover, .post-nav__prev:active, .post-nav__next:hover, .post-nav__next:active {
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 .post-nav__prev:hover:before, .post-nav__prev:active:before, .post-nav__next:hover:before, .post-nav__next:active:before {
@@ -1103,8 +1103,8 @@ News SCSS
 }
 
 .post-nav__next:before {
-  border-top: solid 1px #d84b3d;
-  border-right: solid 1px #d84b3d;
+  border-top: solid 1px var(--accent);
+  border-right: solid 1px var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -1132,8 +1132,8 @@ News SCSS
 }
 
 .post-nav__prev:before {
-  border-bottom: solid 1px #d84b3d;
-  border-left: solid 1px #d84b3d;
+  border-bottom: solid 1px var(--accent);
+  border-left: solid 1px var(--accent);
 }
 
 @media screen and (max-width: 959px) {

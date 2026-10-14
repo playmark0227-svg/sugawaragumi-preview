@@ -23,7 +23,7 @@ html {
 body {
   margin: 0;
   font-family: Hiragino Kaku Gothic Pro, "ヒラギノ角ゴ ProN W3", YuGothic, "游ゴシック", Meiryo, "メイリオ", sans-serif;
-  color: #222;
+  color: var(--ink);
 }
 
 @media screen and (max-width: 959px) {
@@ -107,7 +107,7 @@ dfn {
 }
 
 mark {
-  background-color: #ff0;
+  background-color: #e9dfc7;
   color: #000;
 }
 
@@ -387,8 +387,8 @@ table {
   height: 17px;
   top: 42%;
   right: 42px;
-  border-top: 1px solid #d84b3d;
-  border-right: 1px solid #d84b3d;
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: 0.3s;
@@ -466,8 +466,8 @@ table {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-top: 1px solid #DEDEDE;
-  border-bottom: 1px solid #DEDEDE;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 @media screen and (max-width: 959px) {
@@ -482,7 +482,7 @@ table {
   margin: 18px 25px 18px 0;
   padding: 7px 30px;
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -508,7 +508,7 @@ table {
 
 .recruit__inner .in-wrap .news-area__txt {
   margin: 18px 0;
-  color: #d84b3d;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -574,7 +574,7 @@ table {
 }
 
 .recruit__inner .in-wrap .table-list li .list-bnr {
-  background-color: #009220;
+  background-color: var(--accent);
   color: #FFF;
   font-size: 1.2rem;
   font-weight: bold;
@@ -594,7 +594,7 @@ table {
   display: block;
   width: 100%;
   padding: 20px 40px 20px 20px;
-  color: #009220;
+  color: var(--accent);
   text-align: center;
   font-weight: bold;
   -webkit-transition: ease .3s;
@@ -619,8 +619,8 @@ table {
   height: 10px;
   top: 41%;
   right: 20px;
-  border-top: 1px solid #009220;
-  border-right: 1px solid #009220;
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: .3s;
@@ -637,16 +637,16 @@ table {
 }
 
 .recruit__inner .in-wrap .table-list li.gray .list-bnr {
-  background-color: #005216;
+  background-color: var(--accent-deep);
 }
 
 .recruit__inner .in-wrap .table-list li.gray a {
-  color: #005216;
+  color: var(--accent-deep);
 }
 
 .recruit__inner .in-wrap .table-list li.gray a::after {
-  border-top: 1px solid #005216;
-  border-right: 1px solid #005216;
+  border-top: 1px solid var(--accent-deep);
+  border-right: 1px solid var(--accent-deep);
 }
 
 .recruit__inner .in-wrap .recruit-table {
@@ -680,7 +680,7 @@ table {
 }
 
 .recruit__inner .in-wrap .recruit-table .table-title .title-bnr {
-  background-color: #009220;
+  background-color: var(--accent);
   color: #fff;
   padding: 10px 15px;
   margin-right: 15px;
@@ -695,7 +695,7 @@ table {
 }
 
 .recruit__inner .in-wrap .recruit-table .table-title .title-bnr.gray {
-  background-color: #005216;
+  background-color: var(--accent-deep);
 }
 
 .recruit__inner .in-wrap .recruit-table .table-block {
@@ -716,7 +716,7 @@ table {
   padding: 20px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #009220;
+  border-top: 1px solid var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -741,7 +741,7 @@ table {
 }
 
 .recruit__inner .in-wrap .recruit-table .table-block tr:last-child th {
-  border-bottom: 1px solid #009220;
+  border-bottom: 1px solid var(--accent);
 }
 
 .recruit__inner .in-wrap .recruit-table .table-block tr:last-child td {
@@ -749,11 +749,11 @@ table {
 }
 
 .recruit__inner .in-wrap .recruit-table .table-block.gray th {
-  border-top: 1px solid #005216;
+  border-top: 1px solid var(--accent-deep);
 }
 
 .recruit__inner .in-wrap .recruit-table .table-block.gray:last-child th {
-  border-top: 1px solid #005216;
+  border-top: 1px solid var(--accent-deep);
 }
 
 .bnr {
@@ -785,11 +785,11 @@ table {
 }
 
 .mynavi-bnr {
-  border: 1px solid #00aaeb;
+  border: 1px solid var(--accent);
 }
 
 .engineer-list {
-  color: #00aaeb;
+  color: var(--accent);
 }
 
 .lead-paragraph {
@@ -945,7 +945,7 @@ table {
   display: inline-block;
   width: 36px;
   height: 5px;
-  background-color: #ccc;
+  background-color: var(--line);
   border-radius: 6px;
   text-indent: -9999px;
   outline: none !important;
@@ -964,7 +964,7 @@ table {
 }
 
 .sg-slide .slick-dots li.slick-active button {
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 .sg-slide__item {
@@ -998,7 +998,7 @@ table {
   height: 200px;
   background-position: center;
   background-size: cover;
-  border: 1px solid #ccc;
+  border: 1px solid var(--line);
 }
 
 .sg-slide__ttl {
@@ -1006,7 +1006,7 @@ table {
   font-size: 2.6rem;
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", YuMincho, "游明朝", serif;
   font-weight: bold;
-  color: #d84b3d;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -1054,7 +1054,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid #d84b3d;
+  border: 2px solid var(--accent);
 }
 
 .s-process__item:nth-child(n+2) {
@@ -1076,7 +1076,7 @@ table {
   height: 0px;
   margin: auto;
   border-style: solid;
-  border-color: #d84b3d transparent transparent transparent;
+  border-color: var(--accent) transparent transparent transparent;
   border-width: 20px 20px 0 20px;
 }
 
@@ -1105,7 +1105,7 @@ table {
   width: 145px;
   color: #fff;
   font-weight: bold;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {

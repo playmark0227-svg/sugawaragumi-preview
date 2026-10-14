@@ -132,7 +132,7 @@ Number SCSS
 }
 
 .tiles__item {
-  background-color: #eee;
+  background-color: var(--paper);
 }
 
 @media screen and (max-width: 959px) {
@@ -236,7 +236,7 @@ Number SCSS
 }
 
 .tiles__from {
-  background-color: #eee;
+  background-color: var(--paper);
 }
 
 @media screen and (max-width: 959px) {
@@ -322,7 +322,7 @@ Number SCSS
 }
 
 .number__main {
-  color: #d84b3d;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 959px) {
@@ -734,15 +734,15 @@ Number SCSS
 }
 
 .area__num-main {
-  color: #d84b3d;
+  color: var(--accent);
 }
 
 .qualification .list-module-3__row:not(:first-child) {
-  border-bottom: solid 1px #c8c8c8;
+  border-bottom: solid 1px var(--line);
 }
 
 .qualification .list-module-3__row--first {
-  background-color: #c8c8c8;
+  background-color: var(--line);
 }
 
 @media screen and (max-width: 959px) {
@@ -781,7 +781,7 @@ Number SCSS
 }
 
 .finance__row {
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 1px var(--paper);
 }
 
 @media screen and (max-width: 959px) {
@@ -823,7 +823,7 @@ Number SCSS
 .finance__link {
   display: inline-block;
   color: #fff;
-  background-color: #a20000;
+  background-color: var(--accent-deep);
   border-radius: 5px;
 }
 

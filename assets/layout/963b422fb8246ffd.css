@@ -46,7 +46,7 @@ Number SCSS
 @media screen and (min-width: 960px) {
   .itw-img {
     margin-top: 30px;
-    background-color: #f0f0f0;
+    background-color: var(--paper);
     width: 100%;
     text-align: center;
   }
@@ -66,7 +66,7 @@ Number SCSS
 .itw-img__cap {
   display: block;
   font-style: italic;
-  background-color: #f0f0f0;
+  background-color: var(--paper);
 }
 @media screen and (max-width: 959px) {
   .itw-img__cap {
@@ -79,7 +79,7 @@ Number SCSS
   }
 }
 .itw-img__caplink {
-  color: #d84b3d;
+  color: var(--accent);
   text-decoration: underline;
 }
 
@@ -101,7 +101,7 @@ Number SCSS
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #d84b3d;
+  color: var(--accent);
 }
 @media screen and (max-width: 959px) {
   .itw-box__ttl {
@@ -118,7 +118,7 @@ Number SCSS
   display: block;
   height: 2px;
   margin-right: 8px;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 @media screen and (max-width: 959px) {
   .itw-box__ttl:before {
@@ -197,7 +197,7 @@ Number SCSS
 .time-table__cap {
   text-align: left;
   color: #fff;
-  background-color: #d84b3d;
+  background-color: var(--accent);
 }
 @media screen and (max-width: 959px) {
   .time-table__cap {
@@ -214,7 +214,7 @@ Number SCSS
   border-top: 1px solid #fff;
 }
 .time-table__row:not(:first-of-type) .time-table__txt {
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--paper);
 }
 @media screen and (max-width: 959px) {
   .time-table__time, .time-table__txt {
@@ -229,7 +229,7 @@ Number SCSS
 .time-table__time {
   text-align: left;
   font-weight: normal;
-  background-color: #f0f0f0;
+  background-color: var(--paper);
 }
 @media screen and (min-width: 960px) {
   .time-table__time {
@@ -331,7 +331,7 @@ Number SCSS
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   opacity: 0;
-  background: rgba(0, 81, 170, 0.7);
+  background: rgba(40,111,115, 0.7);
 }
 @media screen and (min-width: 960px) {
   .interview-list__musk:hover {
@@ -381,7 +381,7 @@ Number SCSS
   }
 }
 .interview-list__position {
-  background: #d84b3d;
+  background: var(--accent);
   color: #ffffff;
   text-align: center;
 }

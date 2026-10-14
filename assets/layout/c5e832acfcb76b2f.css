@@ -72,11 +72,11 @@ INDEX SCSS
   height: 0.5em;
 }
 .konbu-schedule--inner::-webkit-scrollbar-thumb {
-  background: #d84b3d;
+  background: var(--accent);
   border-radius: 5px;
 }
 .konbu-schedule--inner::-webkit-scrollbar-track {
-  background: #eee;
+  background: var(--paper);
   border-radius: 5px;
 }
 @media screen and (max-width: 959px) {
@@ -111,10 +111,10 @@ INDEX SCSS
   display: inline-block;
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝体 ProN", "YuMincho", "游明朝", serif;
   white-space: nowrap;
-  background-color: #d84b3d;
+  background-color: var(--accent);
   color: #fff;
   padding: 0 4px;
-  outline: solid 1px #d84b3d; /* 外側の線になる一本線の枠線をひく*/
+  outline: solid 1px var(--accent); /* 外側の線になる一本線の枠線をひく*/
 }
 @media screen and (max-width: 959px) {
   .konbu-step--num {
@@ -177,7 +177,7 @@ INDEX SCSS
 }
 .konbu-step--list li:not(:last-child) {
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--paper);
 }
 .konbu-step-1 {
   display: -webkit-box;
@@ -408,7 +408,7 @@ INDEX SCSS
 }
 .konbu-slide .slick-dots li.slick-active button::before {
   opacity: 1;
-  color: #d84b3d;
+  color: var(--accent);
 }
 .konbu-slide .slick-dots button {
   width: 10px;
@@ -421,7 +421,7 @@ INDEX SCSS
   width: 10px;
   height: 10px;
   opacity: 1;
-  color: #eee;
+  color: var(--paper);
 }
 .konbu-slide--caption {
   margin-top: 20px;
