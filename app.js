@@ -273,3 +273,160 @@
     container.prepend(frame);
   });
 })();
+
+/* Progressive, one-time motion for the existing editorial layout. */
+(() => {
+  'use strict';
+
+  const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (preference.matches || !Element.prototype.animate || !('IntersectionObserver' in window)) return;
+
+  const body = document.body;
+  const main = document.querySelector('main');
+  if (!body || !main) return;
+  body.classList.add('motion-enabled');
+
+  const animations = new Set();
+  const targets = new Set();
+  let observer;
+
+  function play(element, keyframes, options) {
+    try {
+      const animation = element.animate(keyframes, {
+        duration: 650,
+        easing: 'cubic-bezier(.22,1,.36,1)',
+        fill: 'backwards',
+        ...options
+      });
+      animations.add(animation);
+      animation.finished.catch(() => {}).finally(() => animations.delete(animation));
+    } catch (_) {
+      // Unsupported keyframes must never keep content from being read.
+    }
+  }
+
+  function enter(element, delay = 0) {
+    if (element.classList.contains('is-in-view')) return;
+    element.classList.add('is-in-view');
+    if (document.visibilityState === 'hidden' || element.contains(document.activeElement)) return;
+
+    const type = element.dataset.motion;
+    const timing = {delay, duration: type === 'heading' ? 740 : 640};
+    if (type === 'media') {
+      play(element, [
+        {opacity: .45, clipPath: 'inset(0 0 0 8%)'},
+        {opacity: 1, clipPath: 'inset(0 0 0 0%)'}
+      ], {...timing, duration: 820});
+    } else if (type === 'card') {
+      play(element, [
+        {opacity: .36, transform: 'translate3d(0,24px,0)'},
+        {opacity: 1, transform: 'translate3d(0,0,0)'}
+      ], timing);
+      const value = element.querySelector('.number__main');
+      if (value) play(value, [
+        {opacity: .5, transform: 'translate3d(0,12px,0) scale(.94)'},
+        {opacity: 1, transform: 'translate3d(0,0,0) scale(1)'}
+      ], {delay: delay + 150, duration: 700});
+    } else {
+      play(element, [
+        {opacity: .3, transform: 'translate3d(0,18px,0)'},
+        {opacity: 1, transform: 'translate3d(0,0,0)'}
+      ], timing);
+    }
+  }
+
+  function stagger(element) {
+    const siblings = [...element.parentElement.children];
+    return Math.min(siblings.indexOf(element) % 5, 4) * 55;
+  }
+
+  function register(selector, type) {
+    main.querySelectorAll(selector).forEach(element => {
+      if (targets.has(element) || !element.getClientRects().length) return;
+      if (element.closest('[aria-hidden="true"], [hidden], dialog')) return;
+      // A parent card already moves its contents together. Keep the layout calm.
+      if (element.closest('[data-motion="card"]')) return;
+      element.dataset.motion = type;
+      targets.add(element);
+    });
+  }
+
+  // Repeated editorial units appear throughout all source pages. Register the
+  // units first so headings and images inside a card do not animate twice.
+  register([
+    '.interview-list__box', '.tiles__item', '.list-module-4__item',
+    '.news-list__item', '.list-module-2__item', '.list-module-1__item',
+    '.info-nav__item', '.recruit__inner .contents__block',
+    '.konbu-step-1', '.konbu-step-2', '.konbu-step-3',
+    '.award', '.banner-icon', '.box-module-1'
+  ].join(','), 'card');
+
+  register([
+    '.ttl-module-1__main', '.sg-sec__ttl', '.ttl-module-2',
+    '.ttl-module-3', '.ttl-module-4', '.tiles__ttl',
+    '.wp-block-heading', '.itw-box__ttl', '.article__head',
+    '.recruit-table .table-title', '.block-title'
+  ].join(','), 'heading');
+
+  register([
+    '.about__inner-interview .sg-sec__lead', '.sg-sec__lead',
+    '.txt-module-1', '.wp-block-paragraph', '.itw-box__txt',
+    '.interview-list__intro', '.article__body > p',
+    '.recruit__inner .contents__lead'
+  ].join(','), 'copy');
+
+  register([
+    '.box-module-4', '.ship-block__left__ph', '.wp-block-image',
+    '.itw-img', '.itw-box__img'
+  ].join(','), 'media');
+
+  observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      observer.unobserve(entry.target);
+      enter(entry.target, stagger(entry.target));
+    }
+  }, {threshold: .08, rootMargin: '0px 0px -5% 0px'});
+
+  for (const element of targets) observer.observe(element);
+
+  // The drone hero leads with the exact existing copy, then the subline,
+  // destination and news. Only the presentation changes; text and order stay.
+  const hero = main.querySelector('.mv');
+  if (hero) {
+    const line1 = hero.querySelector('.slogan-line:first-child');
+    const line2 = hero.querySelector('.slogan-line:nth-child(2)');
+    const subline = hero.querySelector('.mv__catch__sub');
+    const action = hero.querySelector('.mv__catch__link');
+    const news = hero.querySelector('.mv__news');
+    [line1, line2, subline, action, news].forEach((element, index) => {
+      if (!element) return;
+      element.dataset.motion = 'hero';
+      element.classList.add('is-in-view');
+      play(element, [
+        {opacity: 0, transform: `translate3d(0,${index < 2 ? 30 : 18}px,0)`},
+        {opacity: 1, transform: 'translate3d(0,0,0)'}
+      ], {duration: index < 2 ? 800 : 650, delay: 100 + index * 135});
+    });
+  }
+
+  let scrollQueued = false;
+  function updateScrollState() {
+    body.classList.toggle('motion-scrolled', window.scrollY > 24);
+    scrollQueued = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (scrollQueued) return;
+    scrollQueued = true;
+    requestAnimationFrame(updateScrollState);
+  }, {passive: true});
+  updateScrollState();
+
+  preference.addEventListener('change', () => {
+    if (!preference.matches) return;
+    observer.disconnect();
+    animations.forEach(animation => animation.cancel());
+    targets.forEach(element => element.classList.add('is-in-view'));
+    body.classList.remove('motion-enabled');
+  }, {once: true});
+})();

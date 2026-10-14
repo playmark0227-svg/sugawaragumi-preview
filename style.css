@@ -405,3 +405,175 @@ body[data-source-path="/equipment/senpaku/"] .list-module-4__item__ttl{font-weig
   body[data-source-path="/about/about.html"] .name-list__job{flex:0 0 auto;width:100%}
   body[data-source-path="/about/about.html"] .name-list__ppl{flex:0 0 auto;width:100%}
 }
+
+/* Site-wide motion language. The page is readable before JavaScript starts. */
+:root{
+  --sg-motion-ease:cubic-bezier(.22,.68,0,1);
+  --sg-motion-fast:220ms;
+  --sg-motion-medium:380ms;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  /* The existing decorative rules draw in after their headings enter view. */
+  body.motion-enabled .sg-sec__ttl[data-motion="heading"].is-in-view::after,
+  body.motion-enabled .ttl-module-1__main[data-motion="heading"].is-in-view::after{
+    transform-origin:left center;
+    animation:sg-rule-draw 720ms var(--sg-motion-ease) 120ms both;
+  }
+  body[data-source-path="/"].motion-enabled .sg-sec:has(.award) .sg-sec__ttl[data-motion="heading"].is-in-view::after,
+  body[data-source-path^="/member/"].motion-enabled .ttl-module-1__main[data-motion="heading"].is-in-view::after,
+  body[data-source-path="/number/"].motion-enabled .ttl-module-1__main[data-motion="heading"].is-in-view::after{
+    transform-origin:center;
+  }
+  @keyframes sg-rule-draw{
+    from{transform:scaleX(.06);opacity:.45}
+    to{transform:scaleX(1);opacity:1}
+  }
+
+  /* A little depth appears only after the reader begins scrolling. */
+  .header{
+    transition:box-shadow var(--sg-motion-medium) ease,background-color var(--sg-motion-medium) ease;
+  }
+  body.motion-scrolled .header{
+    box-shadow:3px 0 24px rgba(15,48,55,.1);
+  }
+  .header__logo img{
+    transition:transform var(--sg-motion-medium) var(--sg-motion-ease);
+  }
+  .header__close__triger span{
+    transition:transform var(--sg-motion-medium) var(--sg-motion-ease),opacity var(--sg-motion-fast) ease;
+  }
+  .header .gnav__item-1__link,
+  .header .child-menu__item__link,
+  .header .gnav__sns__link,
+  .header .gnav__item-2__link,
+  .nav-link,
+  .category-link,
+  .page-top,
+  .carousel-controls__button,
+  .mv-video-control{
+    transition:color var(--sg-motion-fast) ease,background-color var(--sg-motion-fast) ease,
+      border-color var(--sg-motion-fast) ease,box-shadow var(--sg-motion-fast) ease,
+      translate var(--sg-motion-medium) var(--sg-motion-ease),opacity var(--sg-motion-fast) ease;
+  }
+  .arw-link-2,
+  .w-btn,
+  .award__btn,
+  .name-box__link,
+  .mv__catch__link,
+  .post-nav__back,
+  .fleet-brochure{
+    transition:color var(--sg-motion-fast) ease,background-color var(--sg-motion-fast) ease,
+      border-color var(--sg-motion-fast) ease,box-shadow var(--sg-motion-medium) ease,
+      translate var(--sg-motion-medium) var(--sg-motion-ease);
+  }
+  .arw-link-2::after,
+  .mv__catch__link::after,
+  .name-box__link::after,
+  .fleet-brochure::after{
+    transition:translate var(--sg-motion-medium) var(--sg-motion-ease),border-color var(--sg-motion-fast) ease;
+  }
+  .news-list__item__link,
+  .list-module-2__item__link,
+  .list-module-4__item__link,
+  .sg-slide__link,
+  .recruit__inner .contents__block a{
+    transition:color var(--sg-motion-fast) ease,box-shadow var(--sg-motion-medium) ease,
+      translate var(--sg-motion-medium) var(--sg-motion-ease);
+  }
+  .news-list__item__link .thumb,
+  .list-module-2__item__link .thumb,
+  .list-module-4__item__thumb,
+  .interview-list__pic,
+  .sg-slide__link img,
+  .recruit__inner .contents__block .block-pic img{
+    transition:filter var(--sg-motion-medium) ease;
+  }
+  .interview-list__box,
+  .list-module-4__item,
+  .tiles__item,
+  .info-nav__item{
+    transition:box-shadow var(--sg-motion-medium) ease,translate var(--sg-motion-medium) var(--sg-motion-ease),border-color var(--sg-motion-fast) ease;
+  }
+  .interview-list__arrow{
+    transition:translate var(--sg-motion-medium) var(--sg-motion-ease),color var(--sg-motion-fast) ease;
+  }
+
+  /* Menu panels respond as a single surface; no page layout is shifted. */
+  .header .gnav__item-1.open .child-menu{
+    animation:sg-menu-arrive 240ms var(--sg-motion-ease) both;
+  }
+  @keyframes sg-menu-arrive{
+    from{opacity:0;translate:0 8px}
+    to{opacity:1;translate:0 0}
+  }
+}
+
+@media (prefers-reduced-motion:no-preference) and (hover:hover){
+  .header__logo a:hover img{transform:scale(1.035)}
+  .header .gnav__item-1__link:hover,
+  .header .child-menu__item__link:hover,
+  .nav-link:hover,
+  .category-link:hover{translate:3px 0}
+  .header .gnav__sns__link:hover,
+  .header .gnav__item-2__link:hover{translate:0 -2px}
+  .arw-link-2:hover,
+  .w-btn:hover,
+  .award__btn:hover,
+  .name-box__link:hover,
+  .mv__catch__link:hover,
+  .fleet-brochure:hover{
+    translate:0 -3px;
+    box-shadow:0 10px 20px rgba(15,48,55,.11);
+  }
+  .arw-link-2:hover::after,
+  .mv__catch__link:hover::after,
+  .name-box__link:hover::after,
+  .fleet-brochure:hover::after{translate:4px 0}
+  .news-list__item__link:hover,
+  .list-module-2__item__link:hover,
+  .sg-slide__link:hover,
+  .recruit__inner .contents__block a:hover{translate:0 -4px}
+  .interview-list__box:hover,
+  .list-module-4__item:hover{
+    translate:0 -5px;
+    border-color:var(--accent);
+    box-shadow:0 18px 30px rgba(15,48,55,.12);
+  }
+  .interview-list__box:hover .interview-list__pic,
+  .list-module-4__item__link:hover .list-module-4__item__thumb,
+  .news-list__item__link:hover .thumb,
+  .list-module-2__item__link:hover .thumb,
+  .sg-slide__link:hover img,
+  .recruit__inner .contents__block a:hover .block-pic img{filter:saturate(1.08) brightness(1.035)}
+  .interview-list__box:hover .interview-list__arrow{translate:4px 0}
+  .page-top:hover,
+  .carousel-controls__button:not(:disabled):hover,
+  .mv-video-control:hover{translate:0 -3px}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .arw-link-2:focus-visible,
+  .w-btn:focus-visible,
+  .award__btn:focus-visible,
+  .name-box__link:focus-visible,
+  .mv__catch__link:focus-visible,
+  .fleet-brochure:focus-visible{translate:0 -2px}
+  .arw-link-2:focus-visible::after,
+  .mv__catch__link:focus-visible::after,
+  .name-box__link:focus-visible::after{translate:4px 0}
+  .interview-list__box:focus-within,
+  .list-module-4__item:focus-within{border-color:var(--accent)}
+  .interview-list__box:focus-within .interview-list__arrow{translate:4px 0}
+}
+
+@media (max-width:959px){
+  body.motion-scrolled .header{box-shadow:0 5px 18px rgba(15,48,55,.12)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  body.motion-enabled [data-motion]{
+    animation:none!important;
+    transition:none!important;
+  }
+}
