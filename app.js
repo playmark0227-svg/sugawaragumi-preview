@@ -1,12 +1,28 @@
 (() => {
   'use strict';
-  const desktop = matchMedia('(min-width:960px)');
   const reducedMotion = matchMedia('(prefers-reduced-motion:reduce)');
   const header = document.querySelector('.header');
   const toggle = header?.querySelector('.header__close');
   const nav = header?.querySelector('.gnav');
+  nav?.querySelectorAll('.gnav__item-1__link').forEach(link => {
+    link.setAttribute('aria-label', link.textContent.trim());
+  });
+  // Keep secondary links in one independent column, without changing their order.
+  if (nav && !nav.querySelector('.gnav__secondary')) {
+    const secondaryItems = [...nav.children].filter(item => !item.classList.contains('gnav__item-1'));
+    if (secondaryItems.length) {
+      const group = document.createElement('li');
+      const list = document.createElement('ul');
+      group.className = 'gnav__secondary';
+      list.className = 'gnav__secondary-list';
+      secondaryItems[0].before(group);
+      group.append(list);
+      list.append(...secondaryItems);
+    }
+  }
   const pageRegions = [...document.querySelectorAll('main,.footer,.page-top')];
-  let menuOpen = false, activeSubmenu = null, submenuMode = '', savedOverflow = '';
+  const initialInert = new Map(pageRegions.map(region => [region, region.inert]));
+  let menuOpen = false, activeSubmenu = null, savedOverflow = '';
   const submenus = [...(header?.querySelectorAll('.gnav__item-1--sub') || [])].map((item, i) => {
     const button = item.querySelector(':scope > .gnav__item-1__link');
     const panel = item.querySelector('.child-menu');
@@ -24,20 +40,22 @@
     activeSubmenu.panel.hidden = true;
     activeSubmenu.panel.inert = true;
     activeSubmenu = null;
-    submenuMode = '';
   }
-  function openSubmenu(entry, mode = 'click') {
+  function openSubmenu(entry) {
+    if (!menuOpen) return;
     if (activeSubmenu !== entry) closeSubmenu();
     activeSubmenu = entry;
-    submenuMode = mode;
     entry.item.classList.add('open');
     entry.button.setAttribute('aria-expanded', 'true');
     entry.panel.hidden = false;
     entry.panel.inert = false;
   }
   function setMenu(open, restoreFocus = false) {
-    open = open && !desktop.matches;
-    if (open && !menuOpen) savedOverflow = document.body.style.overflow;
+    open = Boolean(open && nav && toggle);
+    if (open && !menuOpen) {
+      savedOverflow = document.body.style.overflow;
+      nav.scrollTop = 0;
+    }
     if (!open && menuOpen) document.body.style.overflow = savedOverflow;
     if (open) document.body.style.overflow = 'hidden';
     menuOpen = open;
@@ -45,17 +63,21 @@
     if (toggle) {
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+      const label = toggle.querySelector('.header__close__txt');
+      if (label) label.textContent = open ? 'CLOSE' : 'MENU';
     }
-    if (nav) nav.inert = !desktop.matches && !open;
-    pageRegions.forEach(region => { region.inert = open; });
+    if (nav) {
+      nav.inert = !open;
+      nav.setAttribute('aria-hidden', String(!open));
+    }
+    pageRegions.forEach(region => { region.inert = open || initialInert.get(region); });
     if (!open) closeSubmenu();
     if (restoreFocus) toggle?.focus();
   }
   toggle?.addEventListener('click', () => setMenu(!menuOpen));
   submenus.forEach(entry => {
-    let hoverCloseTimer;
     entry.button.addEventListener('click', () => {
-      if (activeSubmenu === entry && submenuMode === 'click') closeSubmenu();
+      if (activeSubmenu === entry) closeSubmenu();
       else openSubmenu(entry);
     });
     entry.button.addEventListener('keydown', event => {
@@ -65,23 +87,13 @@
       const links = [...entry.panel.querySelectorAll('a,button')];
       (event.key === 'ArrowUp' ? links.at(-1) : links[0])?.focus();
     });
-    entry.item.addEventListener('pointerenter', event => {
-      clearTimeout(hoverCloseTimer);
-      if (desktop.matches && event.pointerType !== 'touch' && submenuMode !== 'click') openSubmenu(entry, 'hover');
-    });
-    entry.item.addEventListener('pointerleave', () => {
-      hoverCloseTimer = setTimeout(() => {
-        if (activeSubmenu === entry && submenuMode === 'hover' && !entry.item.contains(document.activeElement)) closeSubmenu();
-      }, 250);
-    });
-    entry.panel.addEventListener('pointerenter', () => clearTimeout(hoverCloseTimer));
   });
-  nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+  nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false, true)));
   document.addEventListener('click', event => {
     if (activeSubmenu && !activeSubmenu.item.contains(event.target)) closeSubmenu();
   });
   document.addEventListener('focusin', event => {
-    if (desktop.matches && activeSubmenu && !activeSubmenu.item.contains(event.target)) closeSubmenu();
+    if (menuOpen && !header.contains(event.target) && !document.querySelector('dialog[open]')) toggle.focus();
   });
   document.addEventListener('keydown', event => {
     if (document.querySelector('dialog[open]')) return;
@@ -97,13 +109,12 @@
       }
     }
     if (event.key === 'Tab' && menuOpen) {
-      const items = [toggle, ...nav.querySelectorAll('a,button')].filter(element => element && !element.closest('[inert]') && element.getClientRects().length);
+      const items = [...header.querySelectorAll('a[href],button:not([disabled])')].filter(element => !element.closest('[inert],[hidden]') && element.getClientRects().length);
       const first = items[0], last = items.at(-1);
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
     }
   });
-  desktop.addEventListener('change', () => setMenu(false));
   setMenu(false);
 
   const hero = document.querySelector('.mv');
@@ -293,8 +304,8 @@
   function play(element, keyframes, options) {
     try {
       const animation = element.animate(keyframes, {
-        duration: 650,
-        easing: 'cubic-bezier(.22,1,.36,1)',
+        duration: 720,
+        easing: 'cubic-bezier(.16,1,.3,1)',
         fill: 'backwards',
         ...options
       });
@@ -314,7 +325,7 @@
     const timing = {delay, duration: type === 'heading' ? 740 : 640};
     if (type === 'media') {
       play(element, [
-        {opacity: .45, clipPath: 'inset(0 0 0 8%)'},
+        {opacity: .55, clipPath: 'inset(0 0 24% 0)'},
         {opacity: 1, clipPath: 'inset(0 0 0 0%)'}
       ], {...timing, duration: 820});
     } else if (type === 'card') {
@@ -327,6 +338,11 @@
         {opacity: .5, transform: 'translate3d(0,12px,0) scale(.94)'},
         {opacity: 1, transform: 'translate3d(0,0,0) scale(1)'}
       ], {delay: delay + 150, duration: 700});
+    } else if (type === 'heading') {
+      play(element, [
+        {opacity: .35, transform: 'translate3d(0,26px,0)', clipPath: 'inset(0 0 100% 0)'},
+        {opacity: 1, transform: 'translate3d(0,0,0)', clipPath: 'inset(0 0 0 0)'}
+      ], timing);
     } else {
       play(element, [
         {opacity: .3, transform: 'translate3d(0,18px,0)'},
@@ -404,8 +420,8 @@
       element.dataset.motion = 'hero';
       element.classList.add('is-in-view');
       play(element, [
-        {opacity: 0, transform: `translate3d(0,${index < 2 ? 30 : 18}px,0)`},
-        {opacity: 1, transform: 'translate3d(0,0,0)'}
+        {opacity: 0, transform: `translate3d(0,${index < 2 ? 34 : 18}px,0)`, clipPath: 'inset(0 0 100% 0)'},
+        {opacity: 1, transform: 'translate3d(0,0,0)', clipPath: 'inset(0 0 0 0)'}
       ], {duration: index < 2 ? 800 : 650, delay: 100 + index * 135});
     });
   }
@@ -413,6 +429,8 @@
   let scrollQueued = false;
   function updateScrollState() {
     body.classList.toggle('motion-scrolled', window.scrollY > 24);
+    const distance = document.documentElement.scrollHeight - window.innerHeight;
+    document.documentElement.style.setProperty('--reading-progress', (distance > 0 ? Math.min(100, Math.max(0, window.scrollY / distance * 100)) : 0) + '%');
     scrollQueued = false;
   }
   window.addEventListener('scroll', () => {
